@@ -46,9 +46,6 @@ defaults:
       path: "404.html"
     values:
       sitemap: false
- 
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

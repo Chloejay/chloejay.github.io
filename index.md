@@ -1,6 +1,5 @@
 ---
 layout: page
-# title: About me
 permalink: /
 description: "I'm a self-taught programmer have experience in data analysis, deep learning. I like writing code(abstract my thought by mixing the English and Maths together) and drinking coffee, and biking."
 ---
@@ -10,9 +9,14 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 
 # Hello, I'm Chloe Ji
 
-I'm a self taught programmer who started to learn coding on the 2017 for web dev, and fully commited myself into data science in the beginning of 2018, spent half year to learning basic computer science and python language. Starting to learn from the community, the first community I get involved is the OpenTechSchool based in Berlin, Germany. Later I gained my first project experience from the community CoderBunker. I'm lucky enough to have the opportunity to work the coolest things in the deep learning field for the object detection in a Dutch startup. 
+I'm a self taught programmer who started to learn coding on the 2017 for web dev, and fully committed myself into data science in the beginning of 2018, during which I spent half year to learning basic computer science and python language. Starting to learn from the community, the first community I get involved is the OpenTechSchool based in Berlin, Germany. Later I gained my first project experience from the community CoderBunker. I'm lucky enough to have the opportunity to work the coolest things in deep learning field for the object detection in a Dutch startup. From the project I gained the whole big picture how to design the data science project from the data labeling to the project deployment in AWS build environment. 
 
 ## Projects
 Here's a brief summary of my personal projects, you can find more on my Github page. 
+
+<li>Genetsis ETL: use NodeJS Loopback API Mysql database to do the ETL data pipeline for the e-commerce brands </li>
+<li>Overhand Fitness </li>
+<li> Coca cola object detection </li>
+<li>Blockchain Binance </li>
 
 </div> 
