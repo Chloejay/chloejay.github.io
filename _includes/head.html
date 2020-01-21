@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }} - Chloe Ji{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.short_description %}{{ page.short_description }}{% else %}{{ page.title | strip | escape }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.tags }}{% endif %}">
+{% include twitter.html %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300i,300">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  {% if page.applause %}
+  <link rel="stylesheet" href="/assets/applause-button.css" />
+  {% endif %}
+
+  {% if jekyll.environment == 'production' %}
+  {% endif %}
+</head>

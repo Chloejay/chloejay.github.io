@@ -1,0 +1,14 @@
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ site.twitter_username }}" />
+  <meta name="twitter:image:src" content="{% if page.image %}{{ site.url }}/assets/{{ page.image }}{% else %}{{ site.url }}/assets/yeray.jpg{% endif %}" />
+  <meta name="twitter:title" content="Chloe Ji - {% if page.title %}{{ page.title | strip | escape }}{% else %}{{ site.title | strip | escape }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.short_description %}{{ page.short_description }}{% else %}{{ page.title | strip | escape }}{% endif %}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:site_name" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}/assets/{{ page.image }}{% else %}{{ site.url }}/assets/yeray.jpg{% endif %}" />
+  <meta property="og:title" content="Chloe Ji - {{ page.title | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+  <meta property="og:description" content="{% if page.short_description %}{{ page.short_description }}{% else %}{{ page.title | strip | escape }}{% endif %}">

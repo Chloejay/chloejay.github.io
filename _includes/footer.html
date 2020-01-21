@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="social-media">
+    {% if site.github_username %}
+    <span>
+      {% include icon-github.html username=site.github_username %}
+    </span>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <span>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </span>
+    {% endif %}
+    </div>
+    <span>© 2020 {{ site.author }} powered by <a href="https://jekyllrb.com">Jekyll</a></span>
+  </div>
+</footer>
