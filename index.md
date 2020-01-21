@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /
-description: "I'm a self-taught programmer have experience in data analysis, deep learning. I like writing code(abstract my thought by mixing the English and Maths together) and drinking coffee, and biking."
+description: "I'm a self-taught programmer have experience in data analysis, deep learning. I like writing code and drinking coffee, and biking."
 ---
 
 <div markdown="1" class="about">
-<img src="/assets/chloe.jpeg" class="profile-pic" height=300 weight=300/>
+<img src="/assets/chloe.jpeg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
 # Hello, I'm Chloe Ji 
 
