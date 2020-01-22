@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "_2020 Resolutions"
+date:   2020-01-22 04:28:53 +0800
+categories: life
+tags: life
+image: bike.jpeg
+applause: true 
+short_description: A short plan I tied with coding for the new year. 
+--- 
+
+
+<div markdown="1" id="text">
+When I was young as a kid, I liked making dream and resolutions far away in time span, like I want to become a fashion designer at 20ish, hmm.. its far away, for when life goes, a lot of real dreams or something more suits me, actually is finded on the way, after I explore and test. So I don't plan for a long time, just have a big goal that I know I will devote my whole lifetime to do, then just doing and practice. 
+
+<!--more-->
+
+Break down, so this year resolutions. 
+- Contribute to one open source python project. 
+- Give back something to community. 
+- Blog twice a month. 
+- Write code every day and more clean and beautiful code. 
+- Be kind and enter into adulthood, be mature. 
+- Take a solo bike trip to Mogan Mount. 
+- Take my parents to the Europe for a trip. 
+- Strengthen my mental muscle and aware to mental health. 
+- Read one book once a month, not only physics and programming one, read some funny book too. 
+- Meet more funny and interesting people and make friends with them. 
+- Attend one DS conference. 
+</div>
