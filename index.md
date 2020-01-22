@@ -5,7 +5,7 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 ---
 
 <div markdown="1" class="about">
-<img src="/assets/chloe.jpeg" alt="{{ site.author }} profile pic" class="profile-pic" height=300 weight=200 />
+<img src="/assets/chloe.jpeg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
 # Hello, I'm Chloe Ji 
 
