@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "How to use kafka with Spark for the ETL"
+title:  "How to use kafka with Spark for ETL"
 date:   2020-01-22 04:28:53 +0800
 categories: python kafka 
 tags: python 
+image: kafka.png
 applause: true
 short_description: A guide for how to use kafka for real time data processing with apache spark stream. 
 --- 
@@ -33,7 +34,7 @@ increase number of partitions to scale the consumers.
 - a distributed commit log, processing event and store the event, intergrate with the legacy relational database which is not the envent system. 
 - exactly once semantic 
 - Kafka’s schema registry: AVRO format
-- Kafka Connect (pulled from Debezium), which will source and sink data back and forth to/from Postgres through Kafka 
+- Kafka Connect (pulled from Debezium), which will source and sink data back and forth to/from Postgres through Kafka
 
 #### Source  
 recently read one post 7 mistakes when using Apache Kafka <a href='https://blog.softwaremill.com/7-mistakes-when-using-apache-kafka-44358cd9cd6'>[link]</a>
