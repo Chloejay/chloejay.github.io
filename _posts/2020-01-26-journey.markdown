@@ -4,7 +4,7 @@ title:  "life is journey"
 date:   2020-01-26 04:28:53 +0800
 categories: life
 tags: biking, lifeThoughts
-image: journey.jepg
+image: journey.jpeg
 applause: true
 short_description: A short words about life after solo biking for 200KM.
 --- 
