@@ -37,8 +37,9 @@ Here's a brief summary of projects both from work and personal experiments, you 
 
 <br>
 ### Contact
-You can find me on [Twitter][twitter], [GitHub][github] or [send me an email](mailto:{{ site.email }}).
+You can find me on [Twitter][twitter], [GitHub][github], [Medium][medium] or [send me an email](mailto:{{ site.email }}).
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
+[medium]: https://medium.com/@{{ site.medium_username}} 
 </div> 
