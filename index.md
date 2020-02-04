@@ -9,10 +9,10 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 
 # Hello, I'm Chloe Ji 
 
-I'm a self taught programmer who started to learn coding in 2017 (after day time work) for front end web development, I've been experimented with Javascript (Reactjs), worked for a few freelance project for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>.
+I'm a self taught programmer who started to learn coding in 2017 (after day time work) for front end web development, I've been experimented with Javascript (Reactjs), worked for a few freelance projects for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>.
 <br/>
 
-I fully committed myself into data science since beginning of 2018, during which I spent half year to learn basic computer science and python language. As I have talked to some of my dev friends, <strong>CS is the field can be self study, even though it's hard.</strong> <br/>
+I fully committed myself into data science since beginning of 2018, during which I spent half year to learn basic computer science, database modeling and python language. As I have talked to some of my dev friends, <strong>CS is the field can be self study, even though it's hard.</strong> <br/>
 
 My self taught journey has gained much support from the community, the first community I got involved is <a href='https://www.opentechschool.org/'>OpenTechSchool</a> based in Berlin, Germany. Later I got my first project experience from the community CoderBunker. <br/>
 

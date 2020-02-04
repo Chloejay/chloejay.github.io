@@ -12,7 +12,22 @@
       {% include icon-twitter.html username=site.twitter_username %}
     </span>
     {% endif %}
-    </div>
+
+    {% if site.medium_username %}
+    <span>
+      {% include icon-medium.html username=site.medium_username %}
+    </span>
+    {% endif %}
+  </div>
+
+  <div>
+    {% if site.description %}
+    <span>
+      {{site.description}}<sup>&trade;</sup>
+    </span>
+    {% endif %} 
+  </div>
+  <div>
     <span>© 2020 {{ site.author }} powered by <a href="https://jekyllrb.com">Jekyll</a></span>
   </div>
-</footer>
+</footer> 
