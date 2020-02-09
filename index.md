@@ -23,20 +23,20 @@ I originally come from consulting, project management background and learnt lang
 
 <span class='info'><strong>More about me</strong></span> <br/>
 
-During chill time, I'm a "crazy" biker and mountain explorer. Black coffee and book lover at daytime.
+During chill time, I'm a biker and mountain explorer. Black coffee and book lover at daytime.
 
 ### Projects
 Here's a brief summary of projects both from work and personal experiments, you can find more on my Github page.
 
-<li>Genetsis ETL: use NodeJS Loopback API, Mysql database to build ETL data pipeline for the e-commerce brand Delta, and automate it by using Cron <a href=''> [link]</a></li>
-<li>Overhand Fitness: activities classification model, comparing model KNN, random forest<a href=''> [link]</a></li>
-<li>Coca cola object detection: using Tensorflow frameowrk for object detetcion model to build the mismatch system with AWS EC2, S3 and dashboaring insights with PowerBI <a href=''> [link]</a></li>
-<li>Blockchain Binance: build big data pipeline, from building DWH NoSQL and SQL, analytical layer, dashboarding with Superset, deployment with Nginx in AWS EC2 platform<a href=''> [link]</a></li>
+<li>Genetsis ETL: use NodeJS Loopback API, Mysql to build ETL data pipeline in-house analytic usage for e-commerce brand Delta, learnt automate it by using Cron <a href=''> [link]</a></li>
+<li>Overhand Fitness: activities classification model, comparing traditional model KNN, random forest, mainly using library scikit learn<a href=''> [link]</a></li>
+<li>Coca cola object detection: using Tensorflow frameowrk for object detetcion model to build the mismatch dashboard with AWS EC2, S3 and PowerBI <a href=''> [link]</a></li>
+<li>Blockchain Binance: build big data pipeline, building DWH NoSQL and SQL, analytical layer, dashboarding use Superset, deployment use Nginx in AWS EC2 platform<a href=''> [link]</a></li>
 
 ### Personal Experimental
 <li>Airflow: automating<a href=''> [link]</a></li>
 <li>Kafka: pub/sub<a href=''> [link]</a></li>
-<li>Spark: Spark Sreaming and PySpark,<a href=''> [link]</a></li>
+<li>Spark: Spark Sreaming and PySpark<a href=''> [link]</a> and I hosted two workshops for this.</li>
 <li>Redis: Cache<a href=''> [link]</a></li> 
 
 <br>
