@@ -9,31 +9,35 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 
 # Hello, I'm Chloe Ji 
 
-I'm a self taught programmer who started to learn coding in 2017 (after day time work) for front end web development, I've been experimented with Javascript (Reactjs), worked for a few freelance projects for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>.
+I'm a self taught programmer who started to teach myself coding since 2017 (after day time work), dove into front end web development before Python. I've been experimented with Javascript (Reactjs) and Wordpress, worked for a few freelance projects for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>.
 <br/>
 
-I fully committed myself into data science since beginning of 2018, during which I spent half year to learn basic computer science, database modeling and python language. As I have talked to some of my dev friends, <strong>CS is the field can be self study, even though it's hard.</strong> <br/>
+Interested abstraction and logic of programming language made me eager to stay on this area, though it's a long way to go still. I took a brave leap to fully committed myself into data science starting from beginning of 2018, during which I spent half year to learn basic computer science theory, database structure, modeling and more python as a full time learner. As I have talked to some of my dev friends, <strong>CS is the field can be self study, even though it's hard.</strong> <br/>
 
-My self taught journey has gained much support from the community, the first community I got involved is <a href='https://www.opentechschool.org/'>OpenTechSchool</a> based in Berlin, Germany. Later I got my first project experience from the community CoderBunker. <br/>
+My self taught journey has gained much support from communities, the one community I got involved is <a href='https://www.opentechschool.org/'>OpenTechSchool</a> based in Berlin, Germany. Later I got my first project experience from the community CoderBunker and worked with experienced engineers and programmers. <br/>
 
-I'm lucky enough to have an opportunity to work for the coolest things in deep learning field, which is related about `object detection` in a Dutch startup. From this end-to-end project I gained a big picture about how to design the data science project from the data labeling to model training, inference and deployment in AWS build environment. <br/> 
+Later to further pursue the data science journey. I'm lucky enough to have an opportunity to work for the coolest things in deep learning field, which is R&D project related about `object detection` for Coca Cola Japan in a Dutch startup. I take responsibility to build an end-to-end project from data labeling to model training, inference and deployment in AWS (EC2) build environment, which helps me understand how to design DS project in cloud and agile workflow. <br/> 
 
 
-I originally come from the consulting and project management background. During the chill time, I'm a crazy biker and mountain explorer. Black coffee and book lover at daytime.
+I originally come from consulting, project management background and learnt language and political economics in Shanghai and France. <br/>
+
+<span class='info'><strong>More about me</strong></span> <br/>
+
+During chill time, I'm a "crazy" biker and mountain explorer. Black coffee and book lover at daytime.
 
 ### Projects
 Here's a brief summary of projects both from work and personal experiments, you can find more on my Github page.
 
-<li>Genetsis ETL: use NodeJS Loopback API Mysql database to do the ETL data pipeline for the e-commerce brand Delta </li>
-<li>Overhand Fitness </li>
-<li>Coca cola object detection </li>
-<li>Blockchain Binance </li>
+<li>Genetsis ETL: use NodeJS Loopback API, Mysql database to build ETL data pipeline for the e-commerce brand Delta, and automate it by using Cron <a href=''> [link]</a></li>
+<li>Overhand Fitness: activities classification model, comparing model KNN, random forest<a href=''> [link]</a></li>
+<li>Coca cola object detection: using Tensorflow frameowrk for object detetcion model to build the mismatch system with AWS EC2, S3 and dashboaring insights with PowerBI <a href=''> [link]</a></li>
+<li>Blockchain Binance: build big data pipeline, from building DWH NoSQL and SQL, analytical layer, dashboarding with Superset, deployment with Nginx in AWS EC2 platform<a href=''> [link]</a></li>
 
 ### Personal Experimental
-<li>Airflow</li>
-<li>Kafka</li>
-<li>Spark</li>
-<li>Redis</li> 
+<li>Airflow: automating<a href=''> [link]</a></li>
+<li>Kafka: pub/sub<a href=''> [link]</a></li>
+<li>Spark: Spark Sreaming and PySpark,<a href=''> [link]</a></li>
+<li>Redis: Cache<a href=''> [link]</a></li> 
 
 <br>
 ### Contact

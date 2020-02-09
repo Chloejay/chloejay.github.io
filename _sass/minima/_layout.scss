@@ -315,7 +315,7 @@
 
   a {
     color: $brand-color;
-    text-decoration: underline;
+    text-decoration: none; // underline
 
     &:visited {
       color: darken($brand-color, 15%);
@@ -324,13 +324,15 @@
     &:hover {
       color: darken($brand-color, 33%);
       text-decoration: underline;
+      color: orange;
+      background-color: none;
     }
   }
 
   a.header-link {
     color: $text-color;
     text-decoration: none;
-    &:hover,
+    &:hover
     &:focus {
       text-decoration: underline;
     }
@@ -428,4 +430,18 @@
   margin-top: 2em;
   padding-left: 70px;
   min-height: 45px;
+}
+
+span.info{
+  color:white; 
+  font-size: 18px; 
+  border: 2px solid $grey-color-light;
+  border-radius: inherit;
+  padding: 0.1em;
+  background-color: $grey-color-dark;
+  &:hover{
+    color: orange;
+    background-color: white;
+    border: none;
+  }
 }
