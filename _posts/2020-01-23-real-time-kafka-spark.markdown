@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to use kafka with Spark for ETL"
+title:  "How to use Kafka with Spark for ETL"
 date:   2020-01-22 04:28:53 +0800
 categories: python kafka 
 tags: python 
@@ -12,16 +12,20 @@ short_description: A guide for how to use kafka for real time data processing wi
 <div markdown="1" id="text">
 <span style='color:red' >draft!</span>
 <br/> 
-I choose to use Apache Kafka, one of the reasons is that it provides API for user-friendly Python and it's easy to integrate to many other tools via Kafka Connect. I had confusion when I tested with both using database connector through the code and Kafka Connect, they both worked but I have one mentor told me, Kafka Connect is more industrial usage, at least which can make my life easier.<br/> So on this article I will demonstrate both approaches for streaming integration.
+I choose to use Apache Kafka, one of the reasons is that it provides API for user-friendly Python and it's easy to integrate to many other tools via Kafka Connect. I had confusion when I tested with both using database connector through Python code and Kafka Connect, the second one is hard for the first setting up and required the strict schema registry, otherwise it failed when consuming real-time sample data. Though they both worked but I have one mentor who taught me few big data cases suggested me, Kafka Connect is more industrial usage, at least which can make my life easier.<br/> So on this article I will demonstrate both approaches for streaming integration.
 
-- Connect with the SQL db 
-- Use Kafka Connect(Debezium and JDBC connector) 
+- Connect with SQL db 
+- Use Kafka Connect(Debezium CDC and JDBC connector) 
 
 Besides since the KSQL was released on last November. It's been a new use case that I have read from latest tech blogs. I was considering if I need to add KSQL too on this article based on time I spend for learning and practicing Kafka. But I think it's more for another topic on Kafka processing layer, so I exclused the details and implementations on this article. 
 <!--more--> 
 
 So what is Kafka? <br/>
-Kafka as the cluster of broker, which connected with the low-level producer and consumer APIs, it well known as a general distribut event stream processing platform, a core part for the ETL. Event is the log, which is the topic contains. Topic is conceptually is similar to the table in database on the stoarage layer, the producer and consumer write and read data from this layer, just like database, the data can be stored as long as needed. Topic is made of messages, which is a key/value bytes together with the header and timestamp as a tuple, key is formated as string. The relationship among the producer and consumer is the classic one-to-many. Producer produce the data and multiple consumers can read it from different offsets or seek backwards to old timestamps. It has ability to provide reliable, self-balancing, and scalable ingestion buffer. The topic in order to scale for comsumptition, which be split into the partitions, each partition lives in each own broker. The whole principle of partition, is the log, which is immutable.
+Kafka as the cluster of broker, which connected with the low-level producer and consumer APIs, it well known as a general distribut event stream processing platform, a core part for the ETL as a message bus.
+
+Event is the log, which is the topic contains. Topic is conceptually similar to the table in database on stoarage layer, the producer and consumer write and read data from this layer, just like database. Data can be stored as long as needed up to data retention policy. 
+
+Topic is made of messages, which is a key/value "bytes" together with the header and timestamp as a tuple, key is formated as string. The relationship of producer and consumer is the classic one-to-many. Producer produces data and multiple consumers can read it from different offsets or seek backwards to old timestamps. It has ability to provide reliable, self-balancing, and scalable ingestion buffer. The topic in order to scale for comsuming, which be split into the partitions, each partition lives in each own broker. The whole principle of partition, is the log, which is immutable.
 
 The typical use-case that uses Kafka to ingest, transform, load, validate, enrich and store the real time data into the DWH or data lake. The reason is Kafka supports high throughtput writes and low lantency reads, and maintainable.
 <figure>
@@ -43,7 +47,7 @@ if each partition's topic has different sizes, how to write partitioning functio
 </figure> 
 
 Kafka's three key functionalities in a scalable, fault-tolerant, and reliable manner:
-- publish and subscribe to events(message bus)
+- pub/sub to events(message bus)
 - store events for as long as you want (storing)
 - process and analyze events(processing) 
 
@@ -75,20 +79,20 @@ increase number of partitions to scale the consumers.
 - Exactly once semantic, here has one good article <a href='https://medium.com/@andy.bryant/processing-guarantees-in-kafka-12dd2e30be0e'>[link]</a> wrote about the processing guarantee in Kafka by comparing this semantic with no guarantee, most once, effectively once. 
 - Schema registry: <a href='https://avro.apache.org/'>AVRO</a> format, to decoupled data formats, for all messages are 'just bytes' that send to Kafka, so need the schema store that stored the pre defined the schema to encode the communication between producer(write) and consumer(read). 
 - Kafka Connect (pulled from Debezium), which can used as both source and sink. 
-- CDC: change data capture, monitor for changes to rows in database, and produce an event for each change, will use Debezium Connector. 
+- CDC(change data capture), monitor the changes (insert, update and delete). 
 
 #### Source  
 recently read one post 7 mistakes when using Apache Kafka <a href='https://blog.softwaremill.com/7-mistakes-when-using-apache-kafka-44358cd9cd6'>[link]</a>
 
 #### Set up 
-#### Prototyp (design) 
+#### Prototype (design) 
 #### Implementation 
 ##### Produce message  
-- config the partition, retentation time, tipic, etc 
+- config broker, ports, zookeeper connection, default topic, producer timeout, encoder, partition, retentation time, etc
 - write avro schema 
 - implement with python code 
 ##### Read message 
-- set the offset etc 
+- set offset, consumer timeout, etc 
 - implement with python code 
 #### Connect data to DWH 
 - MysqlDB 
