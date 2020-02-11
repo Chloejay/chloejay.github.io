@@ -9,6 +9,7 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 
 # Hello, I'm Chloe Ji 
 
+<<<<<<< HEAD
 I'm a self taught programmer who have work in data science for data analysis and deep learning projects. 
 
 I code primarily in Javascript(Reactjs) for web development, I have worked a few freelance projects for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>. To commit myself to data science since 2018, I mainly code on Python and practice myself to follow design pattern and clean code principle. I love the abstraction and logic for the language. 
@@ -19,6 +20,30 @@ Here's a brief summary of projects both from work and personal experiments, you 
 <!-- <blockquote> <small>Note: code I wrote belonged to company project and with signed NDA, which any code and details related not included.</small></blockquote> -->
 <li>Genetsis ETL: use NodeJS Loopback API, Mysql to build ETL data pipeline for e-commerce brand Delta in-house analytic usage, learnt automate it by using Cron </li>
 <li>Overhand Fitness: activities classification model, comparing traditional model KNN, random forest, mainly using library scikit learn (community project)</li>
+=======
+I'm a self taught programmer who started to teach myself coding since 2017 (after day time work), dove into front end web development before Python. I've been experimented with Javascript (Reactjs) and Wordpress, worked for a few freelance projects for startup <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>.
+<br/>
+
+Interested abstraction and logic of programming language made me eager to stay on this area, though it's a long way to go still. I took a brave leap to fully committed myself into data science starting from beginning of 2018, I studied full time for half year to learn basic computer science theory, data structure, modeling and more python. As I have talked to some of my dev friends, <strong>CS is the field can be self study, even though it's hard.</strong> <br/>
+
+My self taught journey has gained much support from communities, the one community I got involved is <a href='https://www.opentechschool.org/'>OpenTechSchool</a> based in Berlin, Germany. Later I got my first project experience from the community CoderBunker and worked with experienced engineers and programmers. <br/>
+
+Later to further pursue the data science journey. I'm lucky enough to have an opportunity to work for the coolest things in deep learning field, which is R&D project related about `object detection` for Coca Cola Japan in a Dutch startup. I take responsibility to build an end-to-end project from data labeling to model training, inference and deployment in AWS (EC2) build environment, which helps me understand how to design DS project in cloud and a agile workflow. <br/> 
+
+I originally come from consulting, project management background and learnt language and political economics in Shanghai and Nice, France. <br/>
+
+<span class='info'><strong>More about me</strong></span> <br/>
+
+During chill time, I'm a biker and mountain explorer. Black coffee and book lover at daytime. I like open source, a member of one English speaking Python community named <a href='https://www.pythonistacafe.com/'>PythonistaCafe</a>.
+
+### Projects
+Here's a brief summary of projects both from work and personal experiments, you can find more on my Github page.
+
+<!-- <blockquote> <small>Note: code I wrote belonged to company project and with signed NDA, which any code and details related not included.</small></blockquote> -->
+
+<li>Genetsis ETL: use NodeJS Loopback API, Mysql to build ETL data pipeline for e-commerce brand Delta in-house analytic usage, learnt automate it by using Cron </li>
+<li>Overhand Fitness: activities classification model, comparing traditional model KNN, random forest, mainly using library scikit learn (experimental community project)</li>
+>>>>>>> 43b50a06541445d4c1bd62d8948586d60c031d13
 <li>Coca cola object detection: using Tensorflow framework for object detetcion model to build the mismatch dashboard tool with AWS EC2, S3 and PowerBI</li>
 <li>Blockchain Binance: build big data pipeline, building simple DWH NoSQL and SQL, analytical layer, dashboarding use Superset, deployment use Nginx in AWS EC2 platform</li>
 
