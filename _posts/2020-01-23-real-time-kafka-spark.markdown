@@ -25,7 +25,7 @@ Kafka as the cluster of broker, which connected with the low-level producer and 
 
 Event is the log, which is the topic contains. Topic is conceptually similar to the table in database on stoarage layer, the producer and consumer write and read data from this layer, just like database. Data can be stored as long as needed up to data retention policy. 
 
-Topic is made of messages, which is a key/value "bytes" together with the header and timestamp as a tuple, key is formated as string. The relationship of producer and consumer is the classic one-to-many. Producer produces data and multiple consumers can read it from different offsets or seek backwards to old timestamps. It has ability to provide reliable, self-balancing, and scalable ingestion buffer. The topic in order to scale for comsuming, which be split into the partitions, each partition lives in each own broker. The whole principle of partition, is the log, which is immutable.
+Topic is made of messages, which is a key/value "bytes" together with the header and timestamp as a tuple, key is formated as string. The relationship of producer and consumer is the classic one-to-many. Producer produces data and multiple consumers can read it from different offsets or seek backwards to old timestamps. It has ability to provide reliable, self-balancing, and scalable ingestion buffer. The topic in order to scale for comsuming, which be split into the partitions, each partition lives in each own broker. The whole principle of partition, is the log, which is immutable. Consumer can group to group, titled with groupId, the same groupId can be used to consume different topics and are totally independent.
 
 The typical use-case that uses Kafka to ingest, transform, load, validate, enrich and store the real time data into the DWH or data lake. The reason is Kafka supports high throughtput writes and low lantency reads, and maintainable.
 <figure>
@@ -99,3 +99,21 @@ recently read one post 7 mistakes when using Apache Kafka <a href='https://blog.
 - Kafka Connect 
 #### Way more, to do the data processing with the Spark Stream 
 </div>
+
+know how our consumer application behaves
+--group mygroup \
+  --new-consumer \
+  --describe
+
+Note: some offsets are unknown (therefore the lag also) because the consumers did not consume all the partitions yet.
+
+watch -n1 -t (use watch) 
+
+how to know the consumer lag? 
+
+kafka-console-consumer --consumer.config /tmp/consumer.config \
+  --formatter "kafka.coordinator.GroupMetadataManager\$OffsetsMessageFormatter" \
+  --zookeeper localhost:2181 \
+  --topic __consumer_offsets
+
+__consumer_offsets (group, topic, partition number)
