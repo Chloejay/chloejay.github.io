@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "a love letter to programming souls"
+title:  "a letter to programming souls"
 date:   2020-02-15 04:28:53 +0800
 categories: life
 tags: programming

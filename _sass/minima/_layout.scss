@@ -301,10 +301,10 @@
   }
 
   hr {
-    margin: 2em auto;
-    width: 50%;
+    margin: 1em auto;
+    width: 100%;
     border: 0 none;
-    border-top: 2px dashed $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     background: none;
     height: 0;
 }
@@ -322,9 +322,8 @@
     }
 
     &:hover {
-      color: darken($brand-color, 33%);
+      color: darken(#8785a2, 33%);
       text-decoration: underline;
-      color: orange;
       background-color: none;
     }
   }
@@ -375,11 +374,15 @@
 
     ul {
       margin-bottom: 0;
+      list-style-position: outside;
     }
   }
 
-  .about {
-    display: block;
+  li{
+    list-style-type: circle;
+    list-style-position: inside;
+    text-indent: -0.75em;
+    padding-left: 0.75em;
   }
 
   .feedback {
@@ -440,8 +443,19 @@ span.info{
   padding: 0.1em;
   background-color: $grey-color-dark;
   &:hover{
-    color: orange;
+    color:#ff6f5e;
     background-color: white;
     border: none;
   }
+}
+
+span.firstletter{
+  color:#ff2e63;
+  float: left;
+  font-family: Bitter;
+  font-size: 80px;
+  line-height: 62px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 2px;
 }
