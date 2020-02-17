@@ -20,4 +20,6 @@ So I'm working on it. What drives me emotionally is one tweets reply, "you've go
 I'm blessed and so content when hearing this. I know this is always the reason that let me stay in this field, for I have met and talked to so much kind people from this world, which make me want to to be one of them!! <br/>
 
 It's a long way but so pleasure to meet/virtually meet many nice beings, which we understand sharing is loving, really doing the work to make the world more love with tech. Love this world enough, just for this reason!
+
+Recently I have a deep reflection, I believe to become a good programmer, not only programming skill required, it's more about what the inner world the programmer are, are you creative enough? Are you curious for the unknown? Are you persistent so that have continuous courage to stay stuck when debugging and learning? Are you enjoy learning? Are you sharing too? that's why most good programmers do open source and mentor newbies. Are you really thinking? Are you paying to attention? Are you enjoy staying alone? Not need always but to keep updated the new knowledge, need certain quantity of quality time to read source code and documentation. There are a lot, which is mental model inside the programmer to turn to skill and his/her wisdom. It's can't learnt by coding but life itself! 
 </div>
