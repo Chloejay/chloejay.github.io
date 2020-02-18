@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "avro schema registry use case with Kafka REST"
-date:   2020-02-18 04:28:53 +0800
+date:   2020-02-18 22:28:53 +0800
 categories: Kafka
 tags: Python, Kafka, Zookeeper 
 image: avro.jpeg
@@ -14,35 +14,36 @@ I plan to make a separate article to do avro and its usage with Kafka REST, whic
 
 First let's jump into the Confluent website and install Kafka REST API. After install, the top-level folder structure will like below, 
 <table>
-<tr>
-<th>Folder</th>
-<th>DESC</th>
-</tr>
-<tr>
-<th>/bin/</th>
-<th>Driver scripts for starting and stopping services</th>
-</tr>
-<tr>
-<th>/etc/</th> 
-<th>Configuration files</th> 
-</tr>
-<tr>
-<th>/lib/</th>
-<th>Systemd services</th>
-</tr>
-<tr>
-<th>/logs/</th>
-<th>Log files</th> 
-</tr>
-<tr>
-<th>/share/</th>
-<th>Jars and licenses</th> 
-</tr>
-<tr>
-<th>/src/</th>
-<th>Source files that require a platform-dependent build</th> 
-</tr>
+  <tr>
+    <th>Folder</th>
+    <th>DESC</th>
+  </tr>
+  <tr>
+    <th>/bin/</th>
+    <th>Driver scripts for starting and stopping services</th>
+  </tr>
+  <tr>
+    <th>/etc/</th> 
+    <th>Configuration files</th> 
+  </tr>
+  <tr>
+    <th>/lib/</th>
+    <th>Systemd services</th>
+  </tr>
+  <tr>
+    <th>/logs/</th>
+    <th>Log files</th> 
+  </tr>
+  <tr>
+    <th>/share/</th>
+    <th>Jars and licenses</th> 
+  </tr>
+  <tr>
+    <th>/src/</th>
+    <th>Source files that require a platform-dependent build</th> 
+  </tr>
 </table>
+
 <!--more-->
 
 ###### Config on /etc/ 
