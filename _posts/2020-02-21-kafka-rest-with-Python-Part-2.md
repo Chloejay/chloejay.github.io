@@ -4,20 +4,20 @@ title:  "Avro and Kafka REST for ETL- Part 2"
 date:   2020-02-21 01:20:53 +0800
 categories: python kafka 
 tags: python, data integration
-image: mount_fr.jpeg
+image: avro4.png
 applause: true
 short_description: A guide for how to use kafka for real time data processing with apache spark stream. 
 --- 
 
 <div markdown="1" id="text">
-Applying REST Proxy and Avro Scema Registry is good for front-facing, be it APP or any API rendering data or whatever. So we are using Apache Avro as a schema writer, to encode and decode messages between Kafka Producer and Consumer(s). Avro is different from JSON, it has schema, which is binary, well but it's flexible and easy to use. At least it's the schema that Confluent highly recommend. Key value and key schema which can be used to register the schema: 
+Applying REST Proxy and Avro Schema Registry is good for front-facing, be it APP or any API rendering data or whatever. So we are using Apache Avro as a schema writer, to encode and decode messages between Kafka Producer and Consumer(s). Avro is different from JSON, it has schema, which is binary, well it's flexible and easy to use. At least it's the schema that Confluent highly recommend. Key value and key schema which can be used to register the schema: 
 - topic-key: unique integer. 
-- topic-value, the result of streamed message, is the payload of message.<br/> 
+- topic-value, the result of streamed message, is part of payload structure.<br/> 
+<!--more--> 
+
 For Confluent supports many good blogs to introduce Avro and related Avro official <a href='https://github.com/apache/avro/blob/master/lang/py3/avro/io.py'>doc</a>. So now let's move to implement with Python code to produce and consume messages that be sent to Kafka server. Since I have tested code running with Kafak, multiply Zookeepr nodes and Confluent Schema registry and Kafka REST on the previous exploratory article. Now let's dive into get hands dirty time. You can see the Python code <a href='https://github.com/Chloejay/streampipe/blob/master/kafka/kafkatest/producer.py'>here</a> I write for reference. 
 
 Beaware of that Avro schema should be both as the encode the bytes on Producer side and decode on Consumer side. 
-
-<!--more--> 
 
 The general avro schema looks like below, which including `namespace`, `name`, `type` <a href='https://avro.apache.org/docs/current/spec.html'> avro supports 6 complex types, check more from avro doc</a> and `field`. 
 ```{
