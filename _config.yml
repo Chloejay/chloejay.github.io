@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Code(Maths(English))  
+title: "{4Code}" 
 email: ji.jie@edhec.com
 description: Chloe Ji's Blog. Crafting & Biker!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -41,6 +41,9 @@ minima:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .sass-cache/
+  - .jekyll-cache/
+
 
 defaults:
   -

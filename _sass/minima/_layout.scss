@@ -13,7 +13,7 @@
 
 .site-title {
   @include relative-font-size(1.75);
-  font-weight: 200;
+  font-weight: 160;
   line-height: $base-line-height * $base-font-size * 2.05;
   margin-bottom: 0;
   float: left;
@@ -227,7 +227,7 @@
   line-height: 1;
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.15);
+    @include relative-font-size(2);
   }
 }
 
@@ -409,7 +409,7 @@
 
       .count-container {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.68rem;
         color: #424242;  // this matches the computed $grey-color-dark
         top: -55%;  // for some reason this overlaps with the button on the default -40%
 
