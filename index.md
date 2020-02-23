@@ -16,7 +16,7 @@ I code primarily in Javascript(React) for web development, have worked a few fre
 I mainly code on Python since 2018, attracted by design pattern, clean code principle. I contribute to open source project, read tech blogs (a lot) to help update my knowledge. I log what I found interesting to read on this <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a>. 
 
 <hr>
-On chill time, I'm a biker and mountain explorer 🚴‍♀️. Sometimes I write <a href='http://127.0.0.1:4000/blog/'>blog</a> to share comprehension about new tools I experiment or some bugs I struggle with. 
+On chill time, I'm a biker and mountain explorer 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about new tools I experiment or some bugs I struggle with. 
 <!-- so write to help myself to understand.  -->
 <br/>
 
