@@ -14,7 +14,7 @@
 .site-title {
   @include relative-font-size(1.75);
   font-weight: 160;
-  line-height: $base-line-height * $base-font-size * 2.05;
+  line-height: $base-line-height * $base-font-size * 1.75;
   margin-bottom: 0;
   float: left;
 
@@ -196,7 +196,7 @@
 
   li #text {
     margin-bottom: 10px;
-    @include relative-font-size(0.85);
+    @include relative-font-size(0.8);
   }
 }
 
@@ -308,7 +308,9 @@
     background: none;
     height: 0;
 }
-
+ p{
+   font-size: 0.95em;
+ }
   p img {
     padding: 2em 1em;
   }
@@ -383,6 +385,7 @@
     list-style-position: inside;
     text-indent: -0.75em;
     padding-left: 0.75em;
+    font-size: 0.9em;
   }
 
   .feedback {
@@ -428,12 +431,12 @@
   padding: 0;
 }
 
-.medium {
-  background: 0% 50% no-repeat url("/assets/medium-50px.png");
-  margin-top: 2em;
-  padding-left: 70px;
-  min-height: 45px;
-}
+// .medium {
+//   background: 0% 50% no-repeat url("/assets/");
+//   margin-top: 2em;
+//   padding-left: 70px;
+//   min-height: 45px;
+// }
 
 span.info{
   color:white; 
