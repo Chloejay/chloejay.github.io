@@ -22,7 +22,7 @@ title: "{4Code}"
 email: ji.jie@edhec.com
 description: Chloe Ji's Blog. Crafting & Biker!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chloeji91
 github_username:  chloejay
 medium_username: chloeji
