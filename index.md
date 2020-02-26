@@ -7,16 +7,18 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 <div markdown="1" class="about">
 <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
-## Hello, I'm Chloe Ji 
+# Hello, I'm Chloe Ji 
 
 <span class='firstletter'>I</span>'m a self taught programmer that I have gained work experience in data science field for data analysis and deep learning projects.<br/>
 
-I code primarily in Javascript(React) for web development, have worked a few freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a>. <br/>
+I mainly code Python since 2018, 
+<!-- attracted by design pattern, clean code principle.  -->
+contribute to open source projects, read tech blogs (a lot) to help update my knowledge, the interesting stuff I read logged on <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a>. 
 
-I mainly code on Python since 2018, attracted by design pattern, clean code principle. I contribute to open source project, read tech blogs (a lot) to help update my knowledge, log interesting stuff to read on this <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a>. 
+I programmed primarily in Javascript(React) for web development before 2018, have worked a few freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
 <hr>
-On chill time, I'm a biker and mountain explorer 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about new tools I experiment or some bugs I struggle with.
+On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about new tools I experiment or some bugs I struggle with.
 <!-- so write to help myself to understand.  -->
 <br/>
 

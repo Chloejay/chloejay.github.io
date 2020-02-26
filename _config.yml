@@ -31,6 +31,7 @@ medium_username: chloeji
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 markdown: kramdown
 
 kramdown:
