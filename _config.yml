@@ -32,13 +32,20 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-markdown: kramdown
+  - jekyll-archives
 
+markdown: kramdown
+header_pages:
+  - index.md
+  - blog.md 
+  
+show_excerpts: true
 kramdown:
   auto_ids: true
 highlighter: rouge
 minima:
   date_format: "%-d %b %Y"
+
 exclude:
   - Gemfile
   - Gemfile.lock

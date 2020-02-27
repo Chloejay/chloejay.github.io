@@ -8,19 +8,16 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
 # Hello, I'm Chloe Ji 
+<a id="theme-toggle" onclick="modeSwitcher()"></a>
+<span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working with data analysis and deep learning projects in data science field.<br/>
 
-<span class='firstletter'>I</span>'m a self taught programmer that I have gained work experience in data science field for data analysis and deep learning projects.<br/>
+I mainly code Python since 2018, contribute to open source projects. I like reading and read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
 
-I mainly code Python since 2018, 
-<!-- attracted by design pattern, clean code principle.  -->
-contribute to open source projects, read tech blogs (a lot) to help update my knowledge, the interesting stuff I read logged on <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a>. 
-
-I programmed primarily in Javascript(React) for web development before 2018, have worked a few freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
+I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, have worked a few freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
 <hr>
-On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about new tools I experiment or some bugs I struggle with.
-<!-- so write to help myself to understand.  -->
-<br/>
+
+On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about something I have passion to explore, new tools I experiment or some bugs I struggle with.<br/>
 
 I originally come from consulting, project management background and study language and political economics in Shanghai and Nice, France. 
 <hr>
