@@ -9,21 +9,21 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 
 # Hello, I'm Chloe Ji 
 <a id="theme-toggle" onclick="modeSwitcher()"></a>
-<span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working with data analysis and deep learning projects in data science field.<br/>
+<span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working data analysis and deep learning projects in data science field.<br/>
 
 I mainly code Python since 2018, contribute to open source projects. I like reading and read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
 
-I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, have worked a few freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
+I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, worked freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
 <hr>
 
-On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) to share comprehension about something I have passion to explore, new tools I experiment or some bugs I struggle with.<br/>
+On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) and [medium][medium] to share comprehension about something I have passion to explore, usually is about new tools I experiment or some bugs I struggle with.<br/>
 
-I originally come from consulting, project management background and study language and political economics in Shanghai and Nice, France. 
+I originally worked in consulting and project management, study language and political economics in Shanghai and Nice, France. 
 <hr>
 
 #### Work Projects
-Here's a brief summary of projects, you can find more on my <a href='https://github.com/Chloejay'>Github profile</a>.
+Here's a brief summary of projects I have worked and experimented, you can find more on my <a href='https://github.com/Chloejay'>Github profile</a>.
 <li>Genetsis ETL: use NodeJS Loopback API, Mysql to build ETL data pipeline for e-commerce brand Delta in-house analytic usage, learnt automate it by using Cron </li>
 <li>Overhand Fitness: activities classification model, comparing traditional model KNN, random forest, mainly using library scikit learn (community project)</li>
 <li>Coca cola object detection: using Tensorflow framework for object detetcion model to build the mismatch dashboard tool with AWS EC2, S3 and PowerBI</li>
