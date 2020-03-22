@@ -11,7 +11,7 @@ description: "I'm a self-taught programmer have experience in data analysis, dee
 <a id="theme-toggle" onclick="modeSwitcher()"></a>
 <span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working data analysis and deep learning projects in data science field.<br/>
 
-I mainly code Python since 2018, contribute to open source projects. I like reading and read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
+I mainly code Python since 2018, contribute to open source projects. I like programming in Scala, read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
 
 I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, worked freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
