@@ -71,7 +71,7 @@ def calculatePrice(cost: Double, p: Price)={
 ```
 Further more about class and complex operations in Scala, I will keep to explore on next article. 
 
-2. How to avoid the run-time type error, which is compile validated, but for the unexpectation error on the run-time in JVM environment, it will remove the generic type for class, espeicially for the instance of subtype's can't be the subclass of the instance of supertype. The solution is to prefix `+`, called covariance annotation, it indicates that subtyping is covariant for that parameter, it's the declaration-site variance. Further for use `-` for contravariant and no sign means invariance. `+` used here is to provide two purposes, 1). subtype can extends supertype 2). the instance of subtype can extends instance of supertype.
+How to avoid the run-time type error, which is compile validated, but for the unexpectation error on the run-time in JVM environment, it will remove the generic type for class, espeicially for the instance of subtype's can't be the subclass of the instance of supertype. The solution is to prefix `+`, called covariance annotation, it indicates that subtyping is covariant for that parameter, it's the declaration-site variance. Further for use `-` for contravariant and no sign means invariance. `+` used here is to provide two purposes, 1). subtype can extends supertype 2). the instance of subtype can extends instance of supertype.
 
 So the formula as above, construct the data and its subtypes use `sealed trait and object pattern`. 
 
