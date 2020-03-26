@@ -13,9 +13,10 @@ short_description: pattern
 Since I fall in love for Scala, by its pure functionality and the way it been expressed from both FP and OOP sides, so I can't stop but look this language further. The further leads me to tiny step into space of FP, not the way like lambda, closure, callback etc in Python, JavaScript, but the mathematically it shines with logic, imagination and universal language we are speaking.
 
 #### Why Nomad
-The monad is a common concept(cliches) in Scala for abstraction, it is talked so often in FP. Some(folks) elaborate this concept with Category Theory, some(others) called it as a container.Thinking this picture, a multiply gift boxes, look same outside, but varied gifts (surprises) inside.
+The monad is a common concept(cliches) in Scala for abstraction, it is talked so often in FP. Some(folks) elaborate this concept with Category Theory, some(others) called it as a container. Thinking this picture, a multiply gift boxes, look same outside, but varied gifts (surprises) inside.
 
 Below is a funny expr Monad be described.
+
 <blockquote>
 The Monad is like a bellows:<br/>
 it is empty yet infinitely capable.<br/>
@@ -29,9 +30,10 @@ the less you understand.<br/>
 So zen! 😀
 
 #### What resources and background linked 
-For Monad is useful enough for the sake of essence of FP, so I decide to give it a shot. However, it comes so much unknown and unknown I don't know if is unknown when I study this concept. I read an existed <a href='https://medium.com/free-code-camp/demystifying-the-monad-in-scala-cc716bb6f534'>post</a> from experienced Scala programmer Sinisa Louc, also researched this in math world. Here I would like to recommend a book named **A Brief Course in Modern Math for Programmers**, which covers concept such as monoids, algebraic structures, categories, monomorphism, epimorphism, isomorphism, functors, monads. The book is very short, less than 200 pages, but comprehensive. 
+For Monad is useful enough for the sake of essence of FP, so I decide to give it a shot. However, it comes so much unknown and unknown I don't know if is unknown when I study this concept. I read an existed <a href='https://medium.com/free-code-camp/demystifying-the-monad-in-scala-cc716bb6f534'>post</a> from experienced Scala programmer Sinisa Louc, also researched this in math world. Here I recommend a book named **A Brief Course in Modern Math for Programmers**, which covers concept such as monoids, algebraic structures, categories, monomorphism, epimorphism, isomorphism, functors, monads. The book is very short, less than 200 pages, but comprehensive. 
 
-As the writer said for this book, the purpose is to provide <blockquote>the reader with the food of thought, material for imagination, and ideas from modern mathematics that have been used in programming practice for a while now by those who know these things but which about 90% of practicing programmers would find totally alien.
+As the writer said for this book, the purpose is to provide 
+<blockquote>the reader with the food of thought, material for imagination, and ideas from modern mathematics that have been used in programming practice for a while now by those who know these things but which about 90% of practicing programmers would find totally alien.
 </blockquote>
 
 I enjoyed for partial reading by far and agreed for what been said for programming in this book, like "the math world is revoluting, which becomes more and more important in CS field". I agree based on known part at this moment, as I see such as new language born and old language retired or less used, or certain language produces much enterprise bugs for language itself setbacks, so that's sometimes we code in our code base to fill the enterprise waterfall.
@@ -49,10 +51,12 @@ trait Monad[T]{
 def unit[T](v: T): Monad[T] 
 ```
 Here use `unit` to map the value of type T to get an instance of Monad, Monad[T]; use `flatMap` to compose the operations in a pipeline. In programming, composition is common enough, like currying, which chains parameters to compose multiple parameters together in one running block or nested lines.  
-- `unit` u[T] : T => F[T] (wrap T into Monad F) 
+- `unit` u[T] : T => F[T] (wrap T into Monad F);
 - `multiplication` m[T]: (F[T], T => F[B]) => F[B], be it flatMap.
 
-For unit `u`, and method `m` are natural transformations, so it can be processed in any sequences as the image below, first unit, then flatMap, or other way. Another definition by Cats is <blockquote> A monad is a mechanism for sequencing computations.</blockquote> it has a good book <a href="https://books.underscore.io/scala-with-cats/scala-with-cats.html#what-is-a-monad">Scala with Cats</a>, worthy to have a read. So from the functions flow in Monad, here comes Monad law. 
+For unit `u`, and method `m` are natural transformations, so it can be processed in any sequences as the image below, first unit, then flatMap, or other way. Another definition by Cats is 
+<blockquote> A monad is a mechanism for sequencing computations.</blockquote> 
+it has a good book <a href="https://books.underscore.io/scala-with-cats/scala-with-cats.html#what-is-a-monad">Scala with Cats</a>, worthy to have a read. So from the functions flow in Monad, here comes Monad law. 
 <figure>
 <img src='/assets/monad.png'>
 <figcaption>the image credits for book *A brief course in modern math for programmer*
