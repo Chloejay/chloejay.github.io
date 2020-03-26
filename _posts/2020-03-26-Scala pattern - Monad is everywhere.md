@@ -129,7 +129,7 @@ country flatMap {
 ```
 
 #### Take a break, then Next step 
-As the title, Monad is everywhere and it's practice cases in real world are wildly varied, and rich mathematics is linked with it. so I will keep exploring this math term to expand the unknown, until which click in my head. But I need take a step, walk away from monad, for what I knew for Monad is just a tiny iceberge, aka. Ah I see monad now!&#128587;
+As the title, Monad is everywhere and it's practice cases in real world are wildly varied, and rich mathematics is linked with it. so I will keep exploring this math term to expand the unknown, until which click in my head. But I need take a break, walk away from monad before coming back, for what I knew for Monad is just a tiny iceberge, aka. Ah I see monad now!&#128587;
 
 Further explore required to understand monad in a deep way, such as Kleisli Category, IO monad, also without trying standard library like Cats mentioned above or Future from Scala standard library is hard to understand the how to make use of monad in practical way. 
 
