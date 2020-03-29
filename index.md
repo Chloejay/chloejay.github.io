@@ -9,11 +9,13 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 
 # Hello, I'm Chloe Ji 
 
-Welcome to (\*my*\) home on Internet. This site is built using <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a href="https://git-scm.com/">Git</a>. It is using Minimal theme and hosted on Github. 
+Welcome to my home on Internet. This site is built using <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a href="https://git-scm.com/">Git</a>. It is using Minimal theme and hosted on Github. 
+<hr>
 
 <span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working data analysis and deep learning projects in data science field since 2018.<br/>
 
-I mainly code Python, love to contribute to open source projects. I'm recently passionate about functional programming in Scala, read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
+I mainly code Python and be passionate about functional programming in Scala, love to contribute to open source projects. Have a look <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
+<!-- I read tech blogs (\*a lot *\) to help update my knowledge. -->
 
 I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, worked freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
