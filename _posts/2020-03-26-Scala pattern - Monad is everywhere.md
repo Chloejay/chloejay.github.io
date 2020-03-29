@@ -42,14 +42,16 @@ I enjoyed for partial reading by far and agreed for what been said for programmi
 Bit of theory before code on, for if too much abstract but no real case practice, then at least will bury me in this wildland. 
 
 Monad: a data structure, originated from `functor`(all monads are functors), it(endofunctor) has two operations(special families of morphisms), one is `unit`, one is `flatMap`. Abstarctly speaking, a morphism is a function that maps values of one type into values of another type; functors, which are defined by type constructors, usually map poorer types into richer types. Below the typical ***signature*** of Monad, which is a parametric type, take a type parameter T. 
-```Scala
+
+{% highlight Scala%}
 trait Monad[T]{
   //return flat lists 
   def flatMap[U](f: T=> Monad[U]): Monad[U]
 }
 //take value v of type T, return Monad[T] contains v 
 def unit[T](v: T): Monad[T] 
-```
+{%endhighlight%}
+
 Here use `unit` to map the value of type T to get an instance of Monad, Monad[T]; use `flatMap` to compose the operations in a pipeline. In programming, composition is common enough, like currying, which chains parameters to compose multiple parameters together in one running block or nested lines.  
 - `unit` u[T] : T => F[T] (wrap T into Monad F);
 - `multiplication` m[T]: (F[T], T => F[B]) => F[B], be it flatMap.
@@ -73,7 +75,7 @@ m flatMap u == m
 #### Practice Monad in Scala 
 Eough for theory, I think theory is used to validate and prove what we explore in practical way, therefore build the bridge for practice and theory is critical. So let's bear the basic surface and see how to use that unit to map and flatMap to decompose concept to build a monad. 
 
-```Scala
+{% highlight Scala%}
 class Monad[T](v: T) {
   def map[A](f: T => A) = new Monad(f(v))
   def flatMap[A](f: T => Monad[A]) = f(v)
@@ -84,12 +86,14 @@ val sum= for {
   a <- new Monad(1)
   b <- new Monad(2) 
 } yield a +b //3 
-```
+{%endhighlight%}
+
 #### But, what the heck? - monad be used in practical ways, as a pattern
 For example Scala's `List[T] or Option[T]` is monad from standard libarary, which can `map[T]` to an instance of all Type T, method flatten: `List[List[T]]=> List[T]; u(T)=> List[T]`, is unit transformation. Other popular library such as Cats is widely used for using monad concept. So read that documentations and understand how monad is used there is important along the way. However, I would like to practice the pure way, so that to understand this concept in backbone.  
 
 One useful Monad is **Option Monad**, used often in pattern matching function, to avoid `Null` value in control flow by chaining multiply operations. Suppose we are fetching data via API, some data fields is null, so our function will return None. The code below use for comprehension, the syntatic sugar for Monad to improve code readibility, to be clean (aka. pure).
-```Scala
+
+{% highlight Scala%}
 val list1= List(1,2,3,4)
 val list2= List(2,3,4,5)
 val mapAdd= for {
@@ -103,10 +107,11 @@ list1.flatMap{ a=>
   a+b 
   }
 }
-```
+{%endhighlight%}
+
 Above shows a have a simple monad, flatMap it to add each elements in both Lists, same for data structure List and Dict in option `Null`condition. 
 
-```Scala
+{% highlight Scala%}
 //list monad 
 val country = List("Germany", "China", "US", "France")
 //map 
@@ -126,7 +131,7 @@ country flatMap {
     city=> city
   }
 }
-```
+{%endhighlight%}
 
 #### Take a break, then Next step 
 As the title, Monad is everywhere and it's practice cases in real world are wildly varied, and rich mathematics is linked with it. so I will keep exploring this math term to expand the unknown, until which click in my head. But I need take a break, walk away from monad before coming back, for what I knew for Monad is just a tiny iceberge, aka. Ah I see monad now!&#128587;

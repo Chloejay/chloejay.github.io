@@ -1,25 +1,26 @@
 ---
 layout: page
 permalink: /
-description: "I'm a self-taught programmer have experience in data analysis, deep learning. I like writing code and drinking coffee, and biking."
+description: "I'm a self-taught programmer and lifelong learner. I like writing code, listenning to folk and dreamy music, drinking coffee, and commit to biking."
 ---
 
 <div markdown="1" class="about">
 <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
 # Hello, I'm Chloe Ji 
-<a id="theme-toggle" onclick="modeSwitcher()"></a>
-<span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working data analysis and deep learning projects in data science field.<br/>
 
-I mainly code Python since 2018, contribute to open source projects. I like programming in Scala, read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
+Welcome to (\*my*\) home on Internet. This site is built using <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a href="https://git-scm.com/">Git</a>. It is using Minimal theme and hosted on Github. 
+
+<span class='firstletter'>I</span>'m a self taught programmer that I have gained experience for working data analysis and deep learning projects in data science field since 2018.<br/>
+
+I mainly code Python, love to contribute to open source projects. I'm recently passionate about functional programming in Scala, read tech blogs (\*a lot *\) to help update my knowledge. Have a look about <a href='https://github.com/Chloejay/anti-tldr'>repo anti-tldr</a> for some interesting stuff I read. 
 
 I programmed primarily in HTML, CSS, Javascript(React) for web development before 2018, worked freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as frontend and wordpress dev.<br/>
 
 <hr>
-
 On chill time, I'm a biker and mountain hiker 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) and [medium][medium] to share comprehension about something I have passion to explore, usually is about new tools I experiment or some bugs I struggle with.<br/>
 
-I originally worked in consulting and project management, study language and political economics in Shanghai and Nice, France. 
+Originally I worked in consulting and project management, study language and political economics in Shanghai and Nice, France. 
 <hr>
 
 #### Work Projects
@@ -30,7 +31,7 @@ Here's a brief summary of projects I have worked and experimented, you can find 
 <li>Blockchain Binance: build big data pipeline, building simple DWH (NoSQL and SQL), design analytical layer to build real time dashboard using Apache Superset, deployment using Nginx in AWS EC2 platform</li>
 <hr>
 
-#### Personal Experiments
+#### Experiments
 <li>Airflow: automating data pipeline</li>
 <li>Kafka: pub/sub and Kafka REST<a href='https://github.com/Chloejay/streampipe'> link</a></li>
 <li>Spark: Spark Sreaming and PySpark<a href='https://github.com/Chloejay/dataplayground'> link</a> and I hosted two workshops for this.</li>

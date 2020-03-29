@@ -20,7 +20,7 @@
 
 title: "{4Code}" 
 email: ji.jie@edhec.com
-description: Chloe Ji's Blog. Crafting & Biker!
+description: Chloe Ji's Blog. Crafts-lady & Biker!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chloeji91
@@ -28,8 +28,8 @@ github_username:  chloejay
 medium_username: chloeji
 
 # Build settings
-theme: minima
-# minimal-mistakes-jekyll
+# theme: minima
+theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
@@ -44,6 +44,7 @@ header_pages:
 show_excerpts: true
 kramdown:
   auto_ids: true
+  input: GFM
 highlighter: rouge
 minima:
   date_format: "%-d %b %Y"

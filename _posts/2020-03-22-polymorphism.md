@@ -24,12 +24,13 @@ Notes: my experience from the programming language I learnt, learning the concep
 
 Now coming to Stage 1: the most easy case when we start Scala, that we don't care about type! Like we can do this in the universal type free language Python. 
 
-```Scala
+{% highlight Scala %}
 val name: List[String]=List("Chloe", "Emma")
 val age: List[Int]= List(28,24)
 val isEmpty= (xs: List[_])=>xs == Nil 
 val checkAge= isEmpty(age)//res0: Boolean = false
-```
+{% endhighlight %}
+
 But wait, this is not the real case when coming to type safe language, such as `Any` is very useful for type, which is the supertype(the top level in Scala type structure, for normal types are subtype of `Any`, such as `List`, `Int`, etc.). However, we should not use `Any` if not really needed. So then if we put the same behavior but different data types in Scala-Compiler, it will have overloading error messages during compile time. Ah, so it won't work when running above, so here comes the pattern. 
 
 Stage 2: use subtyping 
@@ -39,7 +40,7 @@ Subtyping, which I first knew was doing **inheritance**, so in my mental model i
 
 So logic is: first abstract then concrete, factory the supertype as abstract type, then implement the concrete method(override) on its subtype, can relate and think about ABC package in Python. For below supertype Language, Deutsch and Chinese is the subset of Language. 
 
-```Scala
+{% highlight Scala %}
 abstract class Language(name: String){
   def greetings
 }
@@ -53,10 +54,11 @@ def say(lang: Language):Unit={
   println(lang.greetings)
 }
 val test= say(new Chinese("chloe"))
-```
+{% endhighlight %}
 
 So we don't need to write the same operation multiply times, keep it DRY, at the same time, the data type can be multiply forms. Note: trait can be used here if we don't use any parameters, otherwise it will give error message, `error: traits or objects may not have parameters`
-```Scala
+
+{% highlight Scala %}
 trait Language{
   def greetings: String
 }
@@ -70,14 +72,14 @@ def say(lang: Language):Unit={
   println(lang.greetings)
 }
 val test= say(new Chinese)
-```
+{% endhighlight %}
 
 Stage 3: use ad-hoc polymorphism 
 To use type classes, a good understanding of ‘implicit’ is required. The keyword "implicit" indicates to Scala compiler to look for ways to convert from one data type to another, such as from Int to Double.
 
 Goal: I will use typical data types Int, Double, String to combine all this in the function and not break it during the run time. First abstract the behavior output type as `T`(or any name that preferred).
 
-```Scala
+{% highlight Scala %}
 trait DataSource[T]{
     def add(x:T, y:T):T   
 }
@@ -99,5 +101,6 @@ data.add(x,y)
 val dataInt= concat(1,2)
 val dataDbl= concat(1.0, 2.0)
 val dataStr= concat("kulture","menchen")
-```
+{% endhighlight %}
+
 Viola, it's cool type classes pattern, the structure is clear from how the function is designed. Personally I prefer type classes, for it's more easy for me to understand and reasoning. 

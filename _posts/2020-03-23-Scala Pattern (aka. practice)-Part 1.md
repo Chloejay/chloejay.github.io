@@ -28,7 +28,7 @@ Abstraction is the key in programming, first came into my mind is when I was doi
 2. Trait is the shared interface to be extended by case class/object
 3. When class have no variables, either use empty () or use case object; case class must have a parameter vice versa
 
-```Scala
+{% highlight Scala%}
 //sum
 sealed trait Price
 object Price {
@@ -52,11 +52,11 @@ val onsale= new ProductSales(2, "sprite",Price.OnSalePrice(0.6, 2))
 
 println(presale.pktName) //coke 
 println(onsale.discount) //0.6
-```
+{%endhighlight%}
 
 It works just like the relational database, so we have the column and rows for data we just hard code. Next step we can do some operations on the toy data just generated. 
 
-```Scala 
+{% highlight Scala %}
 def calculatePrice(cost: Double, p: Price)={
    p match {
     case Price.NoSalePrice => 1
@@ -68,7 +68,8 @@ def calculatePrice(cost: Double, p: Price)={
 
 //val presale_test= calculatePrice(1.2, Price.PreSalePrice(0.8))
 //presale_test: Double = 0.96
-```
+{% endhighlight %} 
+
 Further more about class and complex operations in Scala, I will keep to explore on next article. 
 
 How to avoid the run-time type error, which is compile validated, but for the unexpectation error on the run-time in JVM environment, it will remove the generic type for class, espeicially for the instance of subtype's can't be the subclass of the instance of supertype. The solution is to prefix `+`, called covariance annotation, it indicates that subtyping is covariant for that parameter, it's the declaration-site variance. Further for use `-` for contravariant and no sign means invariance. `+` used here is to provide two purposes, 1). subtype can extends supertype 2). the instance of subtype can extends instance of supertype. 
@@ -76,7 +77,7 @@ So think in a abstract way, if A is a subtype of B, in a sense that every instan
 
 So the formula as above, construct the data and its subtypes use `sealed trait and object pattern`. 
 
-```Scala
+{% highlight Scala %}
 //supertype and subtype 
 sealed trait Transportation[+T]
 object Transportation {
@@ -96,4 +97,4 @@ def move(tool: Transportation[MoveTool]):Unit={
 
 val bike= Transportation.Bikes(BlackBike)
 println(move(bike))
-```
+{% endhighlight %} 
