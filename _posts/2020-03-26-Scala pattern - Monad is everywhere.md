@@ -30,7 +30,7 @@ the less you understand.<br/>
 So zen! 😀
 
 #### What resources and background linked 
-For Monad is useful enough for the sake of essence of FP, so I decide to give it a shot. However, it comes so much unknown and unknown I don't know if is unknown when I study this concept. I read an existed <a href='https://medium.com/free-code-camp/demystifying-the-monad-in-scala-cc716bb6f534'>post</a> from experienced Scala programmer Sinisa Louc, also researched this in math world. Here I recommend a book named **A Brief Course in Modern Math for Programmers**, which covers concept such as monoids, algebraic structures, categories, monomorphism, epimorphism, isomorphism, functors, monads. The book is very short, less than 200 pages, but comprehensive. 
+For Monad is useful enough for the sake of essence of FP, so I decide to give it a shot. However, it comes so much unknown and unknown I don't know if is unknown when I study this concept. I read an existed <a href='https://medium.com/free-code-camp/demystifying-the-monad-in-scala-cc716bb6f534'>post</a> from experienced Scala programmer Sinisa Louc, also researched this in math world. Here I recommend a book named **A Brief Course in Modern Math for Programmers**, which covers concept such as monoids, algebraic structures, categories, isomorphism, functors, monads. The book is very short, less than 200 pages, but comprehensive. 
 
 As the writer said for this book, the purpose is to provide 
 <blockquote>the reader with the food of thought, material for imagination, and ideas from modern mathematics that have been used in programming practice for a while now by those who know these things but which about 90% of practicing programmers would find totally alien.
@@ -137,4 +137,4 @@ country flatMap {
 As the title, Monad is everywhere and it's practice cases in real world are wildly varied, and rich mathematics is linked with it. so I will keep exploring this math term to expand the unknown, until which click in my head. But I need take a break, walk away from monad before coming back, for what I knew for Monad is just a tiny iceberge, aka. Ah I see monad now!&#128587;
 
 Further explore required to understand monad in a deep way, such as Kleisli Category, IO monad, also without trying standard library like Cats mentioned above or Future from Scala standard library is hard to understand the how to make use of monad in practical way. 
-
+</div>
