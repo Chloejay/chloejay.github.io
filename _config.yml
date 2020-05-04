@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "{4Code}" 
+title: "{4Comprehension}" 
 email: ji.jie@edhec.com
 description: Chloe Ji's Blog. Crafting & Biker!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,8 +28,8 @@ github_username:  chloejay
 medium_username: chloeji
 
 # Build settings
-# theme: minima
-theme: minimal-mistakes-jekyll
+theme: minima
+# theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
