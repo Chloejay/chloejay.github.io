@@ -10,11 +10,23 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 # Hello, I'm Chloe Ji 
 <span class='firstletter'>I</span>'m a project and consultant turned programmer, passionate about functional programming and big data. Since 2018, I worked data science in startup firms, my day involves analysis with Python and SQL, dashboard, deep learning and ETL.<br/>
 
-I code Python and Scala, interested in contributing to open source projects. Have a look <a href='https://github.com/Chloejay/anti-tldr'>anti-tldr</a> for some interesting stuff I read. 
+I code Python and Scala, interested in contributing to open source projects. Have a look <a href='https://github.com/Chloejay/anti-tldr'>anti-tldr</a> for some interesting stuff I read. I'm a Coursera online course junkie, I enjoy learning new technologies to upgrade my skill boxes. 
+#### Course I have attended
+<ul>
+<li>Using Python to Interact with the Operating System by Google</li>
+<li>Design Patterns based on Java</li>
+<li>Functional Programming Principles in Scala</li>
+<li>Big Data Analysis with Scala and Spark</li>
+<li>Version Control with Git</li>
+<li>Stanford University CS231N Computer Vision</li>
+<li>Harvard University Statistics 110: Probability</li>
+</ul>
 
-Before 2018, I have programmed bit HTML, CSS, Javascript(React), worked two freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/>
+Before 2018, I programmed bit HTML, CSS, Javascript(React), worked two freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/>
 
 <hr>
+
+#### More Bio
 When I'm not coding, you can find me biking 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) and [medium][medium] to share comprehension about something I'm enthusiastic about, usually is about new tools I experiment or some bugs I debug. Or some Category Theory I recently start to study.<br/>
 
 I study language and political economics in Shanghai and Nice, France. 
@@ -32,8 +44,9 @@ Here's a brief summary of projects I have worked, you can find more on my <a hre
 
 #### Experiments
 <li>Airflow: automating data pipeline</li>
-<li>Kafka: pub/sub and Kafka REST<a href='https://github.com/Chloejay/streampipe'> link</a></li>
-<li>Spark: Scala, Spark Sreaming and PySpark, <a href='https://github.com/Chloejay/dataplayground'> link</a> and I hosted two workshops for this.</li>
+<li>Kappa Architecture(streaming layer): Kafka (Kafka REST), Spark Streaming <a href='https://github.com/Chloejay/streampipe'> link</a></li>
+<li>Scala with Spark</li>
+<li>PySpark, <a href='https://github.com/Chloejay/dataplayground'> link</a> and I hosted two workshops for this.</li>
 <li>Redis: Cache<a href='https://github.com/Chloejay/try_redis'> link</a></li>
 <br>
 
