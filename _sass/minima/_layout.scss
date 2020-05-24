@@ -381,7 +381,7 @@
   }
 
   li{
-    list-style-type: circle;
+    list-style-type: none;
     list-style-position: inside;
     text-indent: -0.75em;
     padding-left: 0.75em;
@@ -439,10 +439,10 @@ span.firstletter{
   color:#ff2e63;
   float: left;
   font-family: Bitter;
-  font-size: 80px;
-  line-height: 62px;
-  padding-top: 4px;
-  padding-right: 8px;
+  font-size: 40px;
+  line-height: 32px;
+  padding-top: 2px;
+  padding-right: 2px;
   padding-left: 2px;
 }
 

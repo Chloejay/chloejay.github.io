@@ -7,54 +7,49 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 <div markdown="1" class="about">
 <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
-# Hello, I'm Chloe Ji 
-<span class='firstletter'>I</span>'m a project and consultant turned programmer, passionate about functional programming and big data. Since 2018, I worked data science in startup firms, my day involves analysis with Python and SQL, dashboard, deep learning and ETL.<br/>
+<span class='firstletter'> I</span>'m Chloe Ji, a project manager and consultant <span style="color:#ff2e63"> => </span> programmer, passionate about functional programming and big data.
 
-I code Python and Scala, interested in contributing to open source projects. Have a look <a href='https://github.com/Chloejay/anti-tldr'>anti-tldr</a> for some interesting stuff I read. I'm a Coursera online course junkie, I enjoy learning new technologies to upgrade my skill boxes. 
-#### Course I have attended
+<!-- I'm working on data science tasks in startup firms, my day involves analysis with Python and SQL, dashboard, deep learning, ETL.<br/> -->
+
+I code <span style="color:#ff2e63">[Python, Scala]</span>, contributing to open source projects. I <a href="https://github.com/Chloejay/anti-tldr">read</a>, <a href="https://chloejay.github.io/blog/">write</a>, <a href="https://www.lewagon.com/blog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> and biking.
+
+I programmed bit <span style="color:#ff2e63"> [HTML, CSS, Javascript]</span>, worked two freelance projects for <a href='https://www.scachess.com/'>SCA</a>;<a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/>
+
+<hr>
+#### Work Projects
+
+Here's a brief summary of some projects I have worked.
 <ul>
-<li>Using Python to Interact with the Operating System by Google</li>
-<li>Design Patterns based on Java</li>
-<li>Functional Programming Principles in Scala</li>
-<li>Big Data Analysis with Scala and Spark</li>
-<li>Version Control with Git</li>
-<li>Stanford University CS231N Computer Vision</li>
-<li>Harvard University Statistics 110: Probability</li>
+<li><strong> -> Genetsis ETL</strong><br/>
+Used NodeJS Loopback, MySQL to create data pipeline for "in-house" analytics(client: Delta), learnt automate by using Cron and design relational database, experimented NodeJS</li>
+<li><strong> -> Coca Cola object detection (DL)</strong><br/>
+Built object detection model (Tensorflow) on AWS EC2, created image/content mismatch dashboard (PowerBI), involves skills: Python, Computer Vision, AWS S3, MySQL</li>
+<li><strong> -> Blockchain Binance</strong><br/> 
+Built big data pipeline, set up DWH (NoSQL and SQL), designed analytical layer to build real time dashboard using BI tool Apache Superset, deploy on AWS EC2 (Nginx)</li>
+<li><strong> -> Blockchain BTC</strong><br/>
+Created ETL to provide dataset from GCP and other BTC address data, analyze graph and assisted mixer address clustering model (Big Query)</li>
+<a href="https://github.com/Chloejay">More</a>.
 </ul>
 
-Before 2018, I programmed bit HTML, CSS, Javascript(React), worked two freelance projects for startups <a href='https://www.scachess.com/'>SCA</a> and <a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/>
-
-<hr>
-
-#### More Bio
-When I'm not coding, you can find me biking 🚴‍♀️. Sometimes I write [blog](https://chloejay.github.io/blog/) and [medium][medium] to share comprehension about something I'm enthusiastic about, usually is about new tools I experiment or some bugs I debug. Or some Category Theory I recently start to study.<br/>
-
-I study language and political economics in Shanghai and Nice, France. 
-<hr>
-
-#### Work Projects
-Here's a brief summary of projects I have worked, you can find more on my <a href='https://github.com/Chloejay'>Github profile</a>.
-<li>Genetsis ETL: use NodeJS Loopback API, MySQL to build ETL data pipeline for in-house analytic, client is e-commerce brand Delta, learnt automate by using Cron </li>
-<li>Overhand Fitness: activities classification model, comparing traditional model KNN, random forest, mainly using library scikit learn (research based community project)</li>
-<li>Coca cola object detection: using Tensorflow framework to build object detection model on AWS EC2(S3), build the mismatch dashboard by using PowerBI</li>
-<li>Blockchain Binance: build big data pipeline, set up simple DWH (NoSQL and SQL), design analytical layer to build real time dashboard using Apache Superset, use Nginx to deploy in AWS EC2 platform</li>
-<li>Blockchain BTC: assist mixer address classification model by using Google cloud Big Query to write scripts and build ETL to analyze graph and BTC address data.(remote work)</li>
-<li>Covid innovation: data analysis to provide graphs to assist team to write article in French website.(remote work)</li>
 <hr>
 
 #### Experiments
-<li>Airflow: automating data pipeline</li>
-<li>Kappa Architecture(streaming layer): Kafka (Kafka REST), Spark Streaming <a href='https://github.com/Chloejay/streampipe'> link</a></li>
-<li>Scala with Spark</li>
-<li>PySpark, <a href='https://github.com/Chloejay/dataplayground'> link</a> and I hosted two workshops for this.</li>
-<li>Redis: Cache<a href='https://github.com/Chloejay/try_redis'> link</a></li>
-<br>
+
+<ul>
+<li>Hive</li>
+<li>Docker</li>
+<li>Airflow <a href="">link</a></li>
+<li>Kappa Architecture (streaming layer): Kafka (Kafka REST), Spark Streaming <a href='https://github.com/Chloejay/streampipe'> link</a></li>
+<li>Scala + Spark</li>
+<li>PySpark <a href='https://github.com/Chloejay/dataplayground'>link</a> and I hosted two workshops for this.</li>
+<li>Redis: Cache <a href='https://github.com/Chloejay/try_redis'>link</a>
+</li>
+</ul>
 
 #### Contact
 You can find me on [Twitter][twitter], [GitHub][github], [Medium][medium] or [send me an email](mailto:{{ site.email }}).
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
-[medium]: https://medium.com/@{{ site.medium_username}} 
-
-</div> 
+[medium]: https://medium.com/@{{ site.medium_username}}
+</div>
