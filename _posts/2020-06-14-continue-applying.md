@@ -9,7 +9,7 @@ applause: true
 --- 
 
 <div markdown="1" id="text">
-Since last month, I have been looking for job for 40 days, applying since May holiday. I got interviews, one is with Zoom, one is on-site whiteboard, technical one, one is told me I passed for 1st round, but my interests to continue with that role is low, I reply to say I would like to stop the applying process, why try if that role is not linked to my career pursuit, even in the end I got the job I would not work extreme hard like chasing my dream, one is the founder is still stuck in EU, so she can't come back to Shanghai within few months, so even got hired, the role is part time etc.
+Since last month, I have been looking for job for 40 days, applying since May holiday. I got interviews, one is virtual interview using Zoom; one is on-site whiteboard, technical one; one is told me I passed for 1st round, but my interests to continue with that role is low, I reply to say I would like to stop the applying process, why try if that role is not linked to my career pursuit, even in the end I got the job I would not work extreme hard like chasing my dream; one is the founder is still stuck in EU, she can't come back to Shanghai within few months, so even got hired, the role is part time at this moment etc.
 
 Applying, checking if any new job posts, preparing interviews makes me work as a full time job seeker, it's an interesting (stressful) tasks. Loads of rejections or just no replies also discouraged me and lead me to heavy self doubt, if I just learnt nothing from my past one year.
 
