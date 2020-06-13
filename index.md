@@ -7,44 +7,36 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 <div markdown="1" class="about">
 <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
-<span class='firstletter'> I</span>'m Chloe Ji, a project manager and consultant <span style="color:#ff2e63"> => </span> programmer, passionate about functional programming and big data.
-
-<!-- I'm working on data science tasks in startup firms, my day involves analysis with Python and SQL, dashboard, deep learning, ETL.<br/> -->
+# Hello 👋🏼 I'm Chloe Ji
+<span class='firstletter'> A</span> passionate, curious programmer, experienced with data analytics, deep learning and ETL. Studying data structure and algorithms, strive to write clean, functional code.
 
 I code <span style="color:#ff2e63">[Python, Scala]</span>, contributing to open source projects. I <a href="https://github.com/Chloejay/anti-tldr">read</a>, <a href="https://chloejay.github.io/blog/">write</a>, <a href="https://www.lewagon.com/blog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> and biking.
 
-I programmed bit <span style="color:#ff2e63"> [HTML, CSS, Javascript]</span>, worked two freelance projects for <a href='https://www.scachess.com/'>SCA</a>;<a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/>
-
+<!-- <!-- <!-- I programmed bit <span style="color:#ff2e63"> [HTML, CSS, Javascript]</span>, worked two freelance projects for <a href='https://www.scachess.com/'>SCA</a>;<a href='https://www.mjus-shoes.com/'> MUJS Shoes</a> as a frontend and wordpress dev.<br/> --> 
+<!--  -->
 <hr>
 #### Work Projects
 
-Here's a brief summary of some projects I have worked.
+Here's a brief summary of projects I have worked.
 <ul>
-<li><strong> -> Genetsis ETL</strong><br/>
-Used NodeJS Loopback, MySQL to create data pipeline for "in-house" analytics(client: Delta), learnt automate by using Cron and design relational database, experimented NodeJS</li>
-<li><strong> -> Coca Cola object detection (DL)</strong><br/>
-Built object detection model (Tensorflow) on AWS EC2, created image/content mismatch dashboard (PowerBI), involves skills: Python, Computer Vision, AWS S3, MySQL</li>
-<li><strong> -> Blockchain Binance</strong><br/> 
-Built big data pipeline, set up DWH (NoSQL and SQL), designed analytical layer to build real time dashboard using BI tool Apache Superset, deploy on AWS EC2 (Nginx)</li>
-<li><strong> -> Blockchain BTC</strong><br/>
-Created ETL to provide dataset from GCP and other BTC address data, analyze graph and assisted mixer address clustering model (Big Query)</li>
+<!-- <li><strong> -> Genetsis ETL</strong><br/> -->
+<!-- <!-- Create data pipeline for "in-house" analytics(client: Delta), learnt automate by using Cron and design relational database (NodeJS Loopback, MySQL) </li> --> 
+<li><strong> >> Coca Cola object detection (DL)</strong><br/>
+Built object detection model (TensorFlow) on AWS EC2, created image/content mismatch dashboard (PowerBI), involves skills: Python, Computer Vision, AWS S3, MySQL.</li>
+<li><strong> >> Blockchain Binance</strong><br/> 
+Built big data pipeline, set up DWH (NoSQL and SQL), designed analytical layer to build real time dashboard using BI tool Apache Superset, deploy on AWS EC2 (Nginx).</li>
+<!-- <li><strong> -> Blockchain BTC</strong><br/> -->
+<!-- <!-- Created ETL to provide dataset from GCP and other BTC address data, analyze graph and assisted mixer address clustering model (Big Query)</li> -->
 <a href="https://github.com/Chloejay">More</a>.
 </ul>
 
-<hr>
-
-#### Experiments
-
-<ul>
-<li>Hive</li>
-<li>Docker</li>
-<li>Airflow <a href="">link</a></li>
-<li>Kappa Architecture (streaming layer): Kafka (Kafka REST), Spark Streaming <a href='https://github.com/Chloejay/streampipe'> link</a></li>
-<li>Scala + Spark</li>
-<li>PySpark <a href='https://github.com/Chloejay/dataplayground'>link</a> and I hosted two workshops for this.</li>
-<li>Redis: Cache <a href='https://github.com/Chloejay/try_redis'>link</a>
-</li>
-</ul>
+<!-- <ul> -->
+<!-- <li>Docker</li> -->
+<!-- <!-- <li>Kappa Architecture (streaming layer): Kafka (Kafka REST), Spark Streaming <a href='https://github.com/Chloejay/streampipe'> link</a></li> -->
+<!-- <li>PySpark <a href='https://github.com/Chloejay/dataplayground'>link</a> and I hosted two workshops.</li> -->
+<!-- <li>Redis: Cache <a href='https://github.com/Chloejay/try_redis'>link</a> -->
+<!-- </li> -->
+<!-- </ul> -->
 
 #### Contact
 You can find me on [Twitter][twitter], [GitHub][github], [Medium][medium] or [send me an email](mailto:{{ site.email }}).
