@@ -3,7 +3,6 @@
 // Define defaults for each variable.
 
 $base-font-family: EB Garamond, serif !default;
-// "Zilla Slab", Georgia
 $hero-font-family: "Raleway", Georgia, serif,!default;
 $base-font-size:   20px !default;
 $base-font-weight: 300 !default;
@@ -13,11 +12,9 @@ $base-line-height: 1.88 !default;
 $spacing-unit:     29px !default;
 
 $text-color:       rgba(66, 66, 66, var(--text-opacity))!default;
-// #111
 $background-color: #fdfdfd!default;
-// #edeff0
-//  #6f42c1
-$brand-color:      #17a2b8 !default;
+$brand-color:      #5b7389 !default;
+$dynamic-color:    #e95872 !default;
 $warning-color:    #f8f8d4 !default;
 $note-color:       #e0eefa !default;
 
@@ -26,7 +23,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    828px;
 $content-width-desktop: 1280px !default;
 
 $on-palm:          600px !default;
