@@ -31,19 +31,24 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
   <ul class = "project_ul">
   <li class="project_li">  
   <img class="projectImage" src="/assets/image_detection_api.png">
-  <div class="hover-content">Coca Cola Image Detection (DL).<br/></div>
-  <p class="hover-content-detailed"> Built object detection model (TensorFlow) on AWS EC2<br/>
-  deliver model result: image/content mismatch dashboard (PowerBI)<br/>
-  Skills: Python, Computer Vision, AWS S3, MySQL.<br/>
-  <a href="https://github.com/Chloejay/vision">Demo</a></p>
+  <div class="content">
+   <div class="hover-content">Coca Cola Image Detection (DL).<br/></div>
+   <p class="hover-content-detailed"> Built object detection model (TensorFlow)<br/>
+   deliver model result: creating image/content mismatch dashboard (PowerBI)<br/>
+   Skills: Python, Computer Vision, AWS S3, MySQL.<br/>
+   <a href="https://github.com/Chloejay/vision"><button class="demo_button">Demo</button></a>
+   </p>
+  </div>
   </li>
   <li class="project_li"> 
   <img class="projectImage" src="/assets/blockchain.png">
+  <div class="content">
   <div class="hover-content">Blockchain Data Analytics Visualization product.<br/></div>
-  <p class="hover-content-detailed">Built big data pipeline<br/>
-  set up DWH (NoSQL and SQL), designed analytical layer to build real time dashboard using BI tool Apache Superset<br/>
-  deploy on AWS EC2 (Nginx).<br/>
-  <a href="https://github.com/Chloejay/superset_nginx">Demo</a></p>
+  <p class="hover-content-detailed">Created big data pipeline, set up DWH (NoSQL and SQL), <br/>
+  designed analytical layer to build real time dashboard using BI tool Apache Superset,<br/>
+  deploy to AWS EC2 (Nginx).<br/>
+  <a href="https://github.com/Chloejay/superset_nginx"><button class="demo_button">Demo</button></a></p>
+  </div>
   </li>
 
   <!-- <li class="project_list">  -->
