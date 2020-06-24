@@ -3,23 +3,26 @@
  */
 .site-header {
   font-family: $hero-font-family;
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
-  color: $brand-color;
-  font-size: 0.92rem;
+  border-top: 4px solid $brand-color;
+  border-bottom: 1px solid $brand-color;
+  min-height: $spacing-unit * 1.625;
+  color: $background-color-backup;
+  font-size: 0.88rem;
+  font-weight: lighter;
+  width: 100%;
+  background-color: $brand-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 
   &,
   &:visited{
-  color: $brand-color;
+  color: $note-color;
   text-decoration: none;
-}
+  }
 
 &:hover {
-  color:$brand-color;
+  color:$note-color;
   text-decoration: underline;
   text-decoration-style: initial;
   text-decoration-color: $dynamic-color;
@@ -29,23 +32,27 @@
 }
 
 .site-title {
-  @include relative-font-size(1.75);
-  font-weight: 140;
+  @include relative-font-size(1.65);
+  font-weight: 108;
   line-height: $base-line-height * $base-font-size * 1.75;
   margin-bottom: 0;
   float: left;
+  color: $background-color-backup;
+  text-decoration: underline;
+  text-decoration-color: $dynamic-color;
 
   &,
   &:visited{
-    color: $brand-color;
+    color: $note-color;
     text-decoration: none;
-
-  }
-  &:hover {
-    color:$brand-color;
     text-decoration: underline;
-    text-decoration-style: initial;
     text-decoration-color: $dynamic-color;
+  }
+
+  &:hover {
+    color:$note-color;
+    text-decoration: none;
+    text-decoration-style: initial;
     letter-spacing: 0.0075em;
     box-sizing: inherit;
   }
@@ -131,14 +138,30 @@
     }
   }
 }
+#name {
+  font-family: $hero-font-family;
+  color: #0d2439;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.9rem;
+  font-weight: 600;
+  display: block;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.12em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
 
 .section_header{
-  padding-top: 0.75rem;
-  margin-bottom: 0.25rem;
-  font-size: 1.05rem;
-  color: $brand-color;
-  letter-spacing: 0.99px;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: $grey-color-dark;
+  letter-spacing: 0.68px;
   justify-content: space-evenly;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .project_ul{
@@ -157,8 +180,8 @@
 
 .projectImage{
   position: relative;
-  width: 84%;
-  height: 14rem;
+  width: 82%;
+  height: 11.2rem;
   padding: 9px;
   background: #f1f3f2;
   border-style: none;
@@ -229,7 +252,7 @@ border: 1px solid $brand-color;
 .project_li .hover-content-detailed{
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  top: 24px;
+  top: 20px;
   opacity: 0;
   font-size: 0.625rem;
   color: $brand-color;
@@ -276,17 +299,15 @@ border: 1px solid $brand-color;
 #intro{
   width: 100%;
   height: auto;
-  background-color:#0d2439; 
+  // background-color: #1f364d; 
   background-attachment: fixed; 
   box-sizing:border-box;
   box-shadow: none;
   border-width: 0;
-  border-style: solid;
-  border-radius: 28px;
   padding-left: 0.28rem;
   padding-right: 0.1rem;
   padding-top: 0.36rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.2rem;
   border-color: #485a70;
 
   @media screen and (min-width: $on-desktop) {
@@ -299,9 +320,9 @@ border: 1px solid $brand-color;
 
 #adj_{
   text-align: center;
-  font-size: 1.64rem;
+  font-size: 1.28rem;
   line-height: inherit;
-  color: #5b7389;
+  color: #0d2439;
 }
 
 #adj_:hover{
@@ -314,14 +335,24 @@ border: 1px solid $brand-color;
 
 #self_intro{
   color:$brand-color;
-  line-height:1.315rem;
+  line-height:1.225rem;
   box-sizing: border-box;
   margin-left: 18px;
-  font-size: 0.825rem;
+  margin-right: 10px;
+  font-size: 0.815rem;
+}
+
+#closing{
+  font-size: 0.78rem;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.12em;
+  margin-inline-start: 0.1em;
+  margin-inline-end: 0.1em;
 }
 
 #lang{
-  color:#393e46;
+  color: $background-color-backup;
+  // #393e46;
   text-decoration: underline;
   text-decoration-color: $dynamic-color;
 }
@@ -340,19 +371,36 @@ a .intro_a{
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $brand-color;
+  background-color: $brand-color;
   padding: $spacing-unit 0;
-  color: $grey-color;
-  @include relative-font-size(0.8);
+  color:$background-color-backup;
+  width: 100%;
+  // color: $grey-color;
+  @include relative-font-size(0.7);
 
   @include media-query($on-palm) {
     @include relative-font-size(0.6);
   }
+  
+  a {
+  color: $grey-color-dark;
+  text-decoration: none; 
+  // text-decoration-color: $dynamic-color;
+  
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
 
+  &:hover {
+    color:$background-color-backup;
+    text-decoration: none;
+  }
+}
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.105);
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -360,7 +408,7 @@ a .intro_a{
   float: right;
 
   span {
-    margin-left: 1em;
+    margin-left: 0.99em;
   }
 
   a {
@@ -425,7 +473,7 @@ a .intro_a{
 
   img {
     float: right;
-    width: 280px;
+    width: 240px;
     padding: 30px 5px 10px 15px;
   }
 
@@ -436,7 +484,7 @@ a .intro_a{
   @include media-query($on-palm) {
     img {
       float: none;
-      width: 300px;
+      width: 280px;
       padding: 1em 0 0 0;
       display: block;
       margin: auto;
@@ -577,7 +625,6 @@ a .intro_a{
     &:hover {
       color:$brand-color;
       text-decoration: none;
-      background-color: none;
     }
   }
 
@@ -587,6 +634,7 @@ a .intro_a{
     &:hover
     &:focus {
       text-decoration: underline;
+      text-decoration-color: $dynamic-color;
     }
   }
 
@@ -594,14 +642,14 @@ a .intro_a{
     padding: 0;
     float:right;
     max-height: 4em;
-    margin: 0.46em;
+    margin: 0.56em;
     border-radius: 53%;
     border: 1px solid black;
     box-shadow: inset;
 
     @media screen and (min-width: $on-desktop) {
-      max-height: 125px;
-      max-width: 125px;
+      max-height: 185px;
+      max-width: 185px;
     }
   }
 

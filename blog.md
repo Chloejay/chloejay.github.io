@@ -1,6 +1,6 @@
 ---
 layout: home
-title: BLOG
+title: Blog
 short_description: "talk about code and learning journey" 
 permalink: /blog/ 
 nav: True 

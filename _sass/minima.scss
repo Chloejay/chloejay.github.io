@@ -13,17 +13,17 @@ $spacing-unit:     29px !default;
 
 $text-color:       rgba(66, 66, 66, var(--text-opacity))!default;
 $background-color: #fdfdfd!default;
+$background-color-backup: #f3f2f1 !default; 
 $brand-color:      #5b7389 !default;
 $dynamic-color:    #e95872 !default;
 $warning-color:    #f8f8d4 !default;
 $note-color:       #e0eefa !default;
-
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    828px;
+$content-width:    800px !default;
 $content-width-desktop: 1280px !default;
 
 $on-palm:          600px !default;

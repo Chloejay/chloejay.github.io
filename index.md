@@ -6,26 +6,29 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 
 <div markdown="1" class="about">
  <div id="intro">
+
   <!-- # Hello 👋🝼 I'm Chloe Ji -->
   <div class="bg">
    <img src="/assets/chloe.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
-   
-   <h2 id="adj_">A Passionate, curious programmer.</h2>
+   <h2 id="name">Chloe Ji</h2>
+   <div id="adj_">Passionate, curious programmer.</div>
    <p id="self_intro">I strive to write clean, functional code.
-   Code in <span id="lang">Python, Scala</span>,
+   Code in <span id="lang">Python (mostly), Scala</span>,
    contributing to open source projects.
    I
    <a class="intro_a" href="https://github.com/Chloejay/anti-tldr">read</a>,
    <a class="intro_a" href="https://chloejay.github.io/blog/">write</a>, 
    <a class="intro_a" href="https://www.lewagon.com/blog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> 
    and biking. <br/> 
-   <span id="closing">As a self taught, I keep updated my skills with new engineering tech stack.</span>
+   <span id="closing">*As a self taught, I keep updated my skills with new engineering tech stack.</span>
    </p>
   </div>
  </div>
-
+<hr>
 <div id="project_section">
-  <h4 class="section_header">WORK PROJECT</h4>
+  <h5 class="section_header">Projects</h5>
+        
+      
 
   <div class="proejcts">
   <ul class = "project_ul">
@@ -60,11 +63,12 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
   </div>
 </div>
 
-<h4 class="section_header">CONTACT</h4>
+<hr>
+<h5 class="section_header">Where to find me?</h5>
+
 <span class="contact_me">You can find me on [Twitter][twitter], [GitHub][github], [Medium][medium] or [send me an email](mailto:{{ site.email }}).</span>
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
 [medium]: https://medium.com/@{{ site.medium_username}}
-
 </div>
