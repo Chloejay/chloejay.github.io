@@ -4,7 +4,7 @@ title:  "Growth in _fear"
 date:   2020-09-12 16:40 +0800
 categories: bike
 tags: 
-image: mogan.jpeg
+image: mogan_view.jpeg
 applause: true
 short_description: create data engineering course, long-distance biking 
 --- 
@@ -13,7 +13,9 @@ short_description: create data engineering course, long-distance biking
 <div markdown="1" id="text">
 It's been a week more from my bike ride, total 400KM from Shanghai to Mogan Mount, it was a journey I always look for, to ride far away, then take back a filtered me. I give this activity a verb `purify` and I know I need this to fill my human heart, for at end of each day I'm not the machine I work on, I'm the human, broken and flawed, emotional... but all happened just is true, then is beautiful.
 
-Long distance provided me a perfect isolated movable space, lonely when cycled in the darkness, fear when I have no battery but still 30KM far from my destination (hotel), uncertain when most streets in Mogan Shan town have no street lights, so I need to bike towards but have not sure if I'm biking in a right direction and how far still... Started setoff at 5AM, so when 8PM I was cycling in a remote mountain surrounded town, I was hungry.
+Long distance provided me a perfect isolated movable space, lonely when cycled in the darkness, fear when I have no battery but still 30KM far from my destination (hotel), uncertain when most streets in Mogan Shan town have no street lights, so I need to bike towards but have not sure if I'm biking in a right direction and how far still... Started setoff at 5AM, so when 8PM I was cycling in a remote mountain surrounded town, I was hungry. (Cycling to return back is way more smooth.)
+<br/>
+<img src="/assets/mogan.jpeg" width="300" height= "300">
 
 However it was time to generate memory, similar to assist teaching DS this summer, two students are inspired me (their hard works and curiosities).
 <ul style="display: flex">
