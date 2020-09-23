@@ -155,9 +155,13 @@ or sink connector, depending of the direction the data has to flow.</small>
 ```bash
 cd ~/confluent-dev/labs
 docker-compose up -d
-# make sure all services are up and running
 docker-compose ps
 ```
+**Run Kafka Cluster and Confluent Control Center**
+<img src="/assets/lab_exe2.png" height="290" width= "800">
+
+**Check if all services are up and running**
+<img src="/assets/lab_exe.png" height= "400" width="800">
 
 #### Use built-in CLI
 produce message and read message use command line, the basic of Kafka I have already done in the beginning of this 
@@ -191,7 +195,7 @@ kafka-console-consumer \
   --property print.key=true
 ```
 
-## Cleanup your environment
+#### Cleanup your environment
 ```bash
 docker-compose down -v
 ```
