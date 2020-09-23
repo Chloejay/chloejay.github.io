@@ -18,7 +18,7 @@ This training consists of 12 modules, so this post is notes of the first module 
 - Fundamentals of Apache Kafka 
     - [2.1 Fundamentals of Apache Kafka - 1 of 2](#fundamentals-of-apache-kafka---1-of-2)
     - [2.2 Fundamentals of Apache Kafka - 2 of 2](#fundamentals-of-apache-kafka---2-of-2)
-    - 2.3 Lab - Using Kafka’s Command-Line Tools
+    - [2.3 Lab-Using Kafka’s Command-Line Tools](#lab---using-kafkas-command-line-tools)
 
 ## 1. Introduction
 
@@ -151,4 +151,48 @@ c. What is the easiest way to integrate your RDBMS with Kafka? <br>
 <small>=> By using Kafka Connect with a plugin/connector that suits your needs, e.g. a JDBC source
 or sink connector, depending of the direction the data has to flow.</small>
 
+## 2.3 Lab - Using Kafka’s Command-Line Tools
+```bash
+cd ~/confluent-dev/labs
+docker-compose up -d
+# make sure all services are up and running
+docker-compose ps
+```
+
+#### Use built-in CLI
+produce message and read message use command line, the basic of Kafka I have already done in the beginning of this 
+year, but let me go through again to follow this training in a more correct way. The new part I learnt is, the default Producer 
+and Consumer are based on null keys, but can add arguments to read by keys. 
+
+###### Create topics and config such as partitions, replications 
+```bash
+kafka-topics --bootstrap-server kafka:9092 \
+  --create \
+  --partitions 1 \
+  --replication-factor 1 \
+  --topic testing
+```
+
+###### Producer 
+```bash
+kafka-console-producer \
+  --broker-list kafka:9092 \
+  --topic testing
+  --property parse.key=true \
+  --property key.separator=,
+```
+
+###### Consumer 
+```bash 
+kafka-console-consumer \
+  --bootstrap-server kafka:9092 \
+  --from-beginning \
+  --topic testing
+  --property print.key=true
+```
+
+## Cleanup your environment
+```bash
+docker-compose down -v
+```
 </div>
