@@ -117,8 +117,6 @@ Object oriented programming, ass a programmer we all use it daily no matter whic
 1. <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; 
 
 ```python 
-To be honest, life is an lesson to let me learn in a hard way but once I start to type, I feel ok. 
-
 from abc import ABC, abstractmethod
 from dataclasses import dataclass 
 
