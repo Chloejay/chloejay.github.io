@@ -9,7 +9,7 @@ short_description:
 --- 
 
 <div markdown="1" id="text">
-The thoughts from advanced python course
+<h6>The thoughts from advanced python course</h6>
 This weekend I has this thoughts and state is calm after a long week learning. I deeply feel that life itself is a puzzle or an algorithm with fixed parameters or adjustable parameters, or its just a self generated code. 
 I feel is a puzzle, that's why we have physics to be formed to discover the life/universe, what is life, why life existed? if having parallel universes? what is space and time?
 But by far life doesn't have answers, so for few legitimate rules, ultimately we don't need rules, which is a shit of cages. It pushes us away from the truth and generates the side effect. 
@@ -27,7 +27,7 @@ Taking the course also put me into a safe and comfortable space to learn in a ce
 4. Concurrency 
 5. OOP one step more 
 
-I will divide these 5 sub-lists into two chunk time to complete, so that I can have time to think, not just for the seek to complete write.I start with 2 and 5 first, for these two are linked with object, also for each other part is a large topic, I need some time to think first, not understand to put into my knowledge system yet. So I can't talk. 
+I will divide these 5 sub-lists into two chunk time to complete, so that I can have time to think, not just for the seek to complete write.I start with 2 and 5 first, for these two are linked with object, also for each other part is a large topic, I need some time to think first.
 
 <h6>Built in methods</h6>
 <p>
@@ -115,8 +115,8 @@ Then FP. I always want to use FP in the code, but its so quick the code I will d
 Object oriented programming, ass a programmer we all use it daily no matter which languages you use, for most of modern languages can use OOP design structure to implement. Object is the starting point, it starts with the class, then multi-classes, to say we have base class A, subclass or childclass class B, class C, so what's the good way to implement this concept. Class is a way to define data, or define behaviors and programming interfaces. 
 
 1. <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; 
+
 ```python 
-# will cover abstractmethod, mixin and MRO and if need to create interface and implementation design pattern? 
 To be honest, life is an lesson to let me learn in a hard way but once I start to type, I feel ok. 
 
 from abc import ABC, abstractmethod
@@ -200,7 +200,7 @@ class F:
         self.val3= val3 
         return self 
 
-    
+
 
 if __name__== "__main__":
     f= F(1,2,3)
@@ -209,6 +209,7 @@ if __name__== "__main__":
 ```
 
 5. For testing purpose, write __repr__, I like this point very much, one benefit is easy for debug usage. 
+
 ```python 
 class G:
     def __init__(self, name: str):
@@ -220,6 +221,7 @@ class G:
 if __name__== "__main__":
     print(G("Chloe Ji"))
 ```
+
 6. Multiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
 <quotes>Mixin defines the code that's meant to combined with some other class via inheritance.</quotes>
 (*The example is from the course.*)
@@ -263,6 +265,7 @@ class MyStack(DebugPush, NumericCheck, Stack):
 ```
 
 7. Using dataclass as object value. 
+
 ```python
 from dataclasses import dataclass
 
@@ -288,6 +291,7 @@ def process_m(m: M):
         # do something 
 ... 
 ```
+
 8. Use super() in class inheritance. 
 ```python
 ```
@@ -299,8 +303,6 @@ def process_m(m: M):
 10. Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
 ```python
 ```
-
-
 
 
 In the end, I starts step my feet into this wonder space.
