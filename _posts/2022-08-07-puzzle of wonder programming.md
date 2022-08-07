@@ -223,10 +223,10 @@ if __name__== "__main__":
 6. Multiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
 <quotes>Mixin defines the code that's meant to combined with some other class via inheritance.</quotes>
 (*The example is from the course.*)
+
 ```python
 class StackInterface:
     pass 
-
 class NumericStack(StackInterface):
     def __init__(self):
         self._items = []
