@@ -676,16 +676,17 @@ a .intro_a{
     }
 
     ul {
-      margin-bottom: 0;
+      margin-bottom: 1;
       list-style-position: outside;
+      font-size: 1em;
     }
   }
 
   li{
-    list-style-type: none;
+    // list-style-type: none;
     list-style-position: inside;
     text-indent: 0.2rem;
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   .feedback {

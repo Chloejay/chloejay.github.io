@@ -17,29 +17,33 @@ But by far life doesn't have answers, so for few legitimate rules, ultimately we
 I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. 
 
 Taking the course also put me into a safe and comfortable space to learn in a certain time. So below are the 5 thoughts I have when I flash back and reflect the on-hold past events. 
-1. Abstraction 
-2. Make use of Python built-in methods. 
+<hr>
+-  Abstraction 
+- Make use of Python built-in methods. 
     - magic method 
     - not very known methods (but useful)
     - some tricks maybe
     - fp --> functools/curry/monad/lambda 
-3. Design layers 
-4. Concurrency 
-5. OOP one step more 
+- Design layers 
+- Concurrency 
+- OOP one step more 
+<hr>
 
 I will divide these 5 sub-lists into two chunk time to complete, so that I can have time to think, not just for the seek to complete write.I start with 2 and 5 first, for these two are linked with object, also for each other part is a large topic, I need some time to think first.
 
-<h6>Built in methods</h6>
+<h4>Built in methods</h4>
 <p>
 In object lifecycle, it starts with __new__() when the object is created, then for inistance apply __init__(), which is the one we use universally often. </p>
 Python magic method, one of the recommended resources <span><a href="https://rszalski.github.iomagicmethods/"> guide</a></span>. 
 
-`__repr__`
-`__str__`
-`__new__`
-`__len__`
-`__call__`
+- `__repr__`
+- `__str__`
+- `__new__`
+- `__len__`
+- `__call__`
+
 more can refer to the guide. 
+
 ```python
 class C:
     def __init__(self, name, any_val):
@@ -65,8 +69,44 @@ if __name__ =="__main__":
 ```
 
 For this one `__init_subclass__`, which supported by Python 3.8+. I never saw this one before, but it looks surprising neat. 
+After reading <a href= "https://peps.python.org/pep-0487/">PEP487</a> and the course, below are the example by my understanding (from the course), for `__init_subclass__`
+which will initializes all subclass of give class, upon class created, the `__set_name__` hook is called on all the attributes defined in the class. 
+It starts with a classmethod. 
+<hr>
+Use case if for adapters for registering subclass or set default attributes value for the subclass. 
+
 ```python
-# TODO
+class Message:
+    registry = { }
+    def __init_subclass__(cls, *a, **kw):
+        Message.registry[cls.__name__] = cls
+        
+    def __init__(self, sequence):
+        self.sequence = sequence
+        
+    def __eq__(self, other):
+        return type(self) == type(other) and vars(self) == vars(other)
+
+class ChatMessage(Message):
+    def __init__(self, sequence, playerid, text):
+        super().__init__(sequence)
+        self.playerid = playerid
+        self.text = text
+
+class PlayerUpdate(Message):
+    def __init__(self, sequence, playerid, x, y):
+        super().__init__(sequence)
+        self.playerid = playerid
+        self.x = x
+        self.y = y
+
+if __name__ == "__main__":
+    sequence= 1
+    m= Message(sequence)
+    chat= ChatMessage(sequence, 1,2)
+    print(chat.text)
+    other= 2
+    print(chat==2)
 
 ```
 
@@ -111,10 +151,10 @@ Then FP. I always want to use FP in the code, but its so quick the code I will d
 # monad, maybe I should skip this, for I totally forget Monad concept.
 ```
 
-<h6>OOP.</h6>
+<h4>OOP.</h4>
 Object oriented programming, ass a programmer we all use it daily no matter which languages you use, for most of modern languages can use OOP design structure to implement. Object is the starting point, it starts with the class, then multi-classes, to say we have base class A, subclass or childclass class B, class C, so what's the good way to implement this concept. Class is a way to define data, or define behaviors and programming interfaces. 
 
-1. <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; 
+<1.> <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; 
 
 ```python 
 from abc import ABC, abstractmethod
@@ -138,7 +178,7 @@ class B(A):
         print("todo implementation")
 ```
 
-2. <strong>Composition</strong>, from principle "favor composition over inheritance", for inheritance makes code tightly couple and not flexible.
+<2.>  <strong>Composition</strong>, from principle "favor composition over inheritance", for inheritance makes code tightly couple and not flexible.
 
 ```python
 class E:
@@ -157,7 +197,7 @@ class D:
         self.ele= ele 
 ```
 
-3. So composition is a good way to combine different method in a class but deign it in a flexible way, which will apply double composition
+<3.> So composition is a good way to combine different method in a class but deign it in a flexible way, which will apply double composition
 
 ```python 
 class H:
@@ -182,7 +222,7 @@ class J:
         pass 
 ```
 
-4. How to construct a class not using __init__, but __new__() inside a class 
+<4.> How to construct a class not using __init__, but __new__() inside a class 
 
 ```python
 class F:
@@ -209,7 +249,7 @@ if __name__== "__main__":
     print(new.val) #display 20;
 ```
 
-5. For testing purpose, write __repr__, I like this point very much, one benefit is easy for debug usage. 
+<5.> For testing purpose, write __repr__, I like this point very much, one benefit is easy for debug usage. 
 
 ```python 
 class G:
@@ -223,7 +263,7 @@ if __name__== "__main__":
     print(G("Chloe Ji"))
 ```
 
-6. Multiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
+<6.> sMultiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
 <quotes>Mixin defines the code that's meant to combined with some other class via inheritance.</quotes>
 (*The example is from the course.*)
 
@@ -265,7 +305,7 @@ class MyStack(DebugPush, NumericCheck, Stack):
     pass
 ```
 
-7. Using dataclass as object value. 
+<7.> Using dataclass as object value. 
 
 ```python
 from dataclasses import dataclass
@@ -293,15 +333,15 @@ def process_m(m: M):
 ... 
 ```
 
-8. Use super() in class inheritance. 
+<8.> Use super() in class inheritance. 
 ```python
 ```
 
-9. Property and method in class. 
+<9.> Property and method in class. 
 ```python
 ```
 
-10. Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
+<10.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
 ```python
 ```
 
