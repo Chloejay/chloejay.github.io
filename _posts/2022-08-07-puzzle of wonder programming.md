@@ -59,7 +59,6 @@ class C:
     def __len__(self):
         return len(self._any_val)
 
-
 if __name__ =="__main__":
     c= C("chloe", "biker.")
     c1= C("doesn't matter", 1)
@@ -107,12 +106,10 @@ if __name__ == "__main__":
     print(chat.text)
     other= 2
     print(chat==2)
-
 ```
 
 How to use arguments, by using `*, /`
 ```python
-# TODO
 # passing tuple as arguments value 
 def func(x, y, z):
     pass 
@@ -136,12 +133,10 @@ func(x, y, /, z): # works on latest version of Python.
 
 func(1,2,3)
 func(1,2,z=3)
-
 ```
 
-Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. 
-```python 
-# example to be provided. 
+Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. Also it provides `functools` package which is useful to avoid "reinvent the wheel".  
+```python
 # curry 
 
 # chain method 
@@ -240,7 +235,6 @@ class F:
         self.val2= val2 
         self.val3= val3 
         return self 
-
 
 
 if __name__== "__main__":
