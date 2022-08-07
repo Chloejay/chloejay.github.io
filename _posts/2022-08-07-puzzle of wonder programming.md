@@ -139,6 +139,7 @@ class B(A):
 ```
 
 2. <strong>Composition</strong>, from principle "favor composition over inheritance", for inheritance makes code tightly couple and not flexible.
+
 ```python
 class E:
     pass 
@@ -157,6 +158,7 @@ class D:
 ```
 
 3. So composition is a good way to combine different method in a class but deign it in a flexible way, which will apply double composition
+
 ```python 
 class H:
     def __init__(self, val, val2):
@@ -181,6 +183,7 @@ class J:
 ```
 
 4. How to construct a class not using __init__, but __new__() inside a class 
+
 ```python
 class F:
     def __init__(self, val, val2, val3= None):
