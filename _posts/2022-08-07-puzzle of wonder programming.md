@@ -135,7 +135,7 @@ func(1,2,3)
 func(1,2,z=3)
 ```
 
-Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. Also it provides `functools` package which is useful to avoid "reinvent the wheel".  
+Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. Also it provides `functools` <a herf="https://docs.python.org/3/library/functools.html">package</a> which is useful to avoid "reinvent the wheel".  
 ```python
 # curry 
 
@@ -337,6 +337,7 @@ def process_m(m: M):
 
 <10.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
 ```python
+
 ```
 
 
