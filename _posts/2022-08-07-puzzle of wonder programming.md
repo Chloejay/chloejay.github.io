@@ -109,6 +109,8 @@ if __name__ == "__main__":
 ```
 
 How to use arguments, by using `*, /`
+The usage to use this, one reason is for arguments interference, to avoid the keywords parameters has the same name fro m **kwargs kind of parameters. 
+
 ```python
 # passing tuple as arguments value 
 def func(x, y, z):
@@ -121,7 +123,7 @@ func(*tuple_val)
 def func(*, x, y): 
     return x+y  
 
-func(x=1,y=2 )    
+func(x=1,y=2)    
 
 def func(x, *, y):
     return x+ y 
@@ -137,11 +139,20 @@ func(1,2,z=3)
 
 Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. Also it provides `functools` <a herf="https://docs.python.org/3/library/functools.html">package</a> which is useful to avoid "reinvent the wheel".  
 ```python
-# curry 
+#lambda can define a function, like a function def do. For function inside function will invoke earlier, 
+#which will cause issue. So either define a helper function to call this function, or use lambda.
+#Or using partial module from functools.
 
-# chain method 
+from functools import partial 
+x,y, z= 1,2,3
+def sum_it(x, y, z):
+    return x+y+z 
 
-# lambda 
+partial_sum= partial(sum_it, 1,2)
+sum_again= partial_sum(3)
+lambda_sum= lambda: sum_it(x, y,z)
+
+assert sum_it(1,2,3) == sum_again == lambda_sum()
 
 # monad, maybe I should skip this, for I totally forget Monad concept.
 ```
@@ -327,15 +338,13 @@ def process_m(m: M):
 ... 
 ```
 
-<8.> Use super() in class inheritance. 
+<8.> Property and method in class. 
 ```python
+@property 
+@setter
 ```
 
-<9.> Property and method in class. 
-```python
-```
-
-<10.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
+<9.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
 ```python
 
 ```
