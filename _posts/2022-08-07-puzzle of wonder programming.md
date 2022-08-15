@@ -109,7 +109,7 @@ if __name__ == "__main__":
 ```
 
 How to use arguments, by using `*, /`
-The usage to use this, one reason is for arguments interference, to avoid the keywords parameters has the same name fro m **kwargs kind of parameters. 
+The usage to use this, one reason is for arguments interference, to avoid the keywords parameters has the same name from **kwargs kind of parameters. 
 
 ```python
 # passing tuple as arguments value 
