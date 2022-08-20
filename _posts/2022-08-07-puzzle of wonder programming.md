@@ -339,7 +339,8 @@ def process_m(m: M):
 ... 
 ```
 
-<8.> Property to use for redefine attributes access. Alternative way is using magic method 
+<8.> Property to use for redefine attributes access. Alternative way is using magic method
+
 - obj.__getattribute__(name)       # Implements: obj.name
 - obj.__setattr__(name, value)     # Implements: obj.name = value
 
@@ -364,7 +365,7 @@ c._name= "chloejay"
 print(c._name)
 ```
 
-<9.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code organizational management.
+<9.> Other decorator method, the most used often one are `@staticmethod`, the reason to use this is to group the same logic or similar methods in a same class, more for code organizational management.
 
 
 In the end, I starts step my feet into this wonder space.
