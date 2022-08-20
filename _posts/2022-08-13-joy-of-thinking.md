@@ -27,8 +27,7 @@ Besides writing unit test, I gained some suggestions that how to test logic duri
 
 <h6>Concurrency</h6>
 Asynchrony programming is means when compiler execute the code, it doesn't need to wait for the current task to complete until execute other tasks, which will make execution efficiently. For asyncio case, which is based on IO bound and it backbone is using generator and sleep. 
-threading: the key idea that a thread runs a function independently, and concurrently, with other code that happens to be running. 
-# first understand what is concurrency and write a use case how to use this. 
+threading: the key idea that a thread runs a function independently, and concurrently, with other code that happens to be running.
 ```python 
 async def func():
 
