@@ -51,7 +51,7 @@ class C:
         self._any_val= any_val
 
     def __repr__(self):
-        return f"name is {self.name} and plus {self._any_val}"
+        return f"C({self.name}, {self._any_val})" #good for logging/debugging
 
     def __call__(self, val): #let an instance to be called as func
         return self._any_val + val  
@@ -139,9 +139,10 @@ func(1,2,z=3)
 
 Then FP. I always want to use FP in the code, but its so quick the code I will design in OOP way. But FP is maths style to write code and no side effect, good is Python is a language FP married with OOP. Also it provides `functools` <a herf="https://docs.python.org/3/library/functools.html">package</a> which is useful to avoid "reinvent the wheel".  
 ```python
-#lambda can define a function, like a function def do. For function inside function will invoke earlier, 
-#which will cause issue. So either define a helper function to call this function, or use lambda.
-#Or using partial module from functools.
+#lambda can define a function, like a function def do. 
+#For function inside function will invoke earlier, 
+#which will cause issue. So either define a helper function to call this function, 
+#or use lambda/partial module from functools.
 
 from functools import partial 
 x,y, z= 1,2,3
@@ -158,9 +159,9 @@ assert sum_it(1,2,3) == sum_again == lambda_sum()
 ```
 
 <h4>OOP.</h4>
-Object oriented programming, as a programmer we all use it daily no matter which languages you use, for most of modern languages can use OOP design structure to implement. Object is the starting point, it starts with the class, then multi-classes, to say we have base class A, subclass or childclass class B, class C, so what's the good way to implement this concept. Class is a way to define data, or define behaviors and programming interfaces. 
+Object oriented programming, as a programmer we all use it daily no matter which languages you use, for most of modern languages can use OOP design structure to implement. Object is the starting point, it starts with the class, then multi-classes, to say we have base class A, subclass or childclass class B, class C, so what's the good way to implement this concept. Class is a way to define data, or define behaviors and programming interfaces, also it expressed one core tenets of OOP is the concept of "encapsulation". 
 
-<1.> <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; 
+<1.> <strong>Inheritance: Define Interfaces</strong>: For the case that having multiple classes with identical functionalities, good practice is to group them into the top-level class that defines a programming interfaces; it brings a main benefit for error checking(missing operations) happens earlier. 
 
 ```python 
 from abc import ABC, abstractmethod
@@ -198,7 +199,7 @@ class D:
 
     def __init__(self, ele:E= None):
         if ele is None:
-            ele= E()
+            ele= E() # create E instance 
         assert isinstance(ele, E), "not the same type"
         self.ele= ele 
 ```
@@ -218,8 +219,8 @@ class I:
 
 class J:
     def __init__(self, h, i):
-        self.h= h 
-        self.i= i 
+        self.h= h  # H object
+        self.i= i  # I object
 
     def __repr__(self):
         return f"h is {self.h} and i is {self.i}"
@@ -268,7 +269,7 @@ if __name__== "__main__":
     print(G("Chloe Ji"))
 ```
 
-<6.> sMultiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
+<6.> Multiple inheritance, concept for the "Mixin" and "MRO". `class.__mro__`
 <quotes>Mixin defines the code that's meant to combined with some other class via inheritance.</quotes>
 (*The example is from the course.*)
 
@@ -338,16 +339,32 @@ def process_m(m: M):
 ... 
 ```
 
-<8.> Property and method in class. 
+<8.> Property to use for redefine attributes access. 
 ```python
 @property 
 @setter
+
+class C:
+    def __init__(self, name, any_val):
+        self.name = name 
+        self._any_val= any_val
+
+    @property 
+    def _name(self):
+        return self.name
+
+    @_name.setter 
+    def _name(self, new_name):
+        self.name= new_name
+        return self.name 
+
+c= C("chloe", 1)
+print(c._name)
+c._name= "chloejay"
+print(c._name)
 ```
 
-<9.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code management. 
-```python
-
-```
+<9.> Other decorator method, the most used often one are @staticmethod, the reason to use this is to group the same logic or similar methods in a same class, more for code organizational management.
 
 
 In the end, I starts step my feet into this wonder space.
