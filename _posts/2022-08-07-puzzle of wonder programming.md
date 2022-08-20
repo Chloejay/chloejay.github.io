@@ -339,11 +339,11 @@ def process_m(m: M):
 ... 
 ```
 
-<8.> Property to use for redefine attributes access. 
-```python
-@property 
-@setter
+<8.> Property to use for redefine attributes access. Alternative way is using magic method 
+- obj.__getattribute__(name)       # Implements: obj.name
+- obj.__setattr__(name, value)     # Implements: obj.name = value
 
+```python
 class C:
     def __init__(self, name, any_val):
         self.name = name 
