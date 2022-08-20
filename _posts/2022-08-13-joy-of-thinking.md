@@ -27,12 +27,26 @@ Besides writing unit test, I gained some suggestions that how to test logic duri
 4. Use mocks/fake objects. Also useful in testing. Could be used to enforce further defensive coding. 
 
 <h6>Concurrency</h6>
-Asynchrony programming is means when compiler execute the code, it doesn't need to wait for the current task to complete until execute other tasks, which will make execution efficiently. For asyncio case, which is based on IO bound and it backbone is using generator and sleep. 
-threading: the key idea that a thread runs a function independently, and concurrently, with other code that happens to be running.
-```python 
-async def func():
+Asynchrony programming is means when compiler execute the code, it doesn't need to wait for the current task to complete until execute other tasks, which will make execution efficiently. For asyncio case, which is based on IO bound and it backbone is using generator and `sleep()`. For threading, the key idea that a thread runs a function independently, and concurrently, with other code that happens to be running. Why use this, to make code runs faster in run time, common case is to be used to call API data, like data ingestion. 
 
-    await ...
+Below we use `asyncio` module, 
+```python
+import asyncio 
 
+async def main():
+    task1= asyncio.create_task(get_name("chloe"))
+    task2= asyncio.create_task(func("any val")) 
+    await asyncio.sleep(2)
+    print("finishded")
+
+async def get_name(name: str):
+    print(name)
+    return name 
+
+async def func(text):
+    print(text)
+    await asyncio.sleep(1) #waiting for some operation; 
+
+asyncio.run(main(), debug= True)
 ```
 </div>
