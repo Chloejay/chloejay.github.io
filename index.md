@@ -13,7 +13,7 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
    <h2 id="name">Chloe Ji</h2>
    <div id="adj_">Passionate, curious programmer.</div>
    <p id="self_intro">I strive to write clean, functional code.
-   Code in <span id="lang">Python (mostly), Scala</span>,
+   Code in <span id="lang">Python (mostly), Scala, Javascript</span>,
    contributing to open source projects.
    I
    <a class="intro_a" href="https://github.com/Chloejay/anti-tldr">read</a>,
@@ -71,4 +71,5 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
 [medium]: https://medium.com/@{{ site.medium_username}}
+[linkedin]: https://www.linkedin.com/in/{{site.linkedin_username}}
 </div>
