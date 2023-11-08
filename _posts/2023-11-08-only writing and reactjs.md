@@ -67,11 +67,11 @@ function SelectTemplateWrapper() {
 
     return (
         <>
-        ... 
-        <SelectedItemContext.Provider value={selectedItem}>
-            <APIComponentWrapper/>
-            <ReportComponentWrapper/>
-        </SelectedItemContext.Provider>
+            ... 
+            <SelectedItemContext.Provider value={selectedItem}>
+                <APIComponentWrapper/>
+                <ReportComponentWrapper/>
+            </SelectedItemContext.Provider>
         </>
     )
 };
@@ -79,12 +79,18 @@ function SelectTemplateWrapper() {
 // for the searchBar component and API one, which extract one level higher
 // use APIComponentWrapper;
 function APIComponentWrapper(){
+    const selectedItem= useContext(SelectedItemContext);
+    ...
     return null;
 }
 
+
 function ReportComponentWrapper(){
+    const selectedItem= useContext(SelectedItemContext);
+    ...
     return null;
 }
+
 
 ```
 
