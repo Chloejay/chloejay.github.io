@@ -76,6 +76,8 @@ function SelectTemplateWrapper() {
     )
 };
 
+// for the searchBar component and API one, which extract one level higher
+// use APIComponentWrapper;
 function APIComponentWrapper(){
     return null;
 }
@@ -83,9 +85,6 @@ function APIComponentWrapper(){
 function ReportComponentWrapper(){
     return null;
 }
-
-
-// for the searchBar component and API one, which need 
 
 ```
 
