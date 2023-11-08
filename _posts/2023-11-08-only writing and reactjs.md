@@ -35,7 +35,7 @@ I will give the <b>high level code example</b> that I wrote, but not the same co
 import react, { useState, useContext, createContext, useEffect } from React; 
 
 
-const SelectedId = createContext();
+const SelectedItemContext = createContext();
 function SelectTemplateWrapper() {
     const [selectedItem, setSelectedItem] = useState([]);
     // other states variables; 
@@ -63,8 +63,29 @@ function SelectTemplateWrapper() {
             .catch(error => {
                 console.error(error)
             });
-    }, [])
+    }, []);
+
+    return (
+        <>
+        ... 
+        <SelectedItemContext.Provider value={selectedItem}>
+            <APIComponentWrapper/>
+            <ReportComponentWrapper/>
+        </SelectedItemContext.Provider>
+        </>
+    )
+};
+
+function APIComponentWrapper(){
+    return null;
 }
+
+function ReportComponentWrapper(){
+    return null;
+}
+
+
+// for the searchBar component and API one, which need 
 
 ```
 
