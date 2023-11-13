@@ -11,9 +11,8 @@ short_description: writing, reactjs
 
 
 <div markdown="1" id="text">
-
 Reactjs is truly FP style, to adjust the new business logic I have to redesign the codebase, which made it more module and new changes is to place the logic in the components level. During the weekend, I wanted to implement <b>TF-IDF algorithm</b> in the search component, which backend I will use `Haystack` library, while to achieve the same result I can implement this logic via `react-select` library. 
-
+<br/>
 To achieve I will still use the `DRF` to build the communication bridge between the client and server. Still I will illustrate with the high level code without details, abstractly. 
 
 Generic business logic, in the report page, UI component `Search/Select` will be dynamic switched, once user click component `Template`, which talked in previous articles with shared states. I will focus on `multi select` component on this article. 
@@ -85,7 +84,7 @@ export function CountryDropDown(){
         try{
             fetch(URL)
             .then((res)=>{
-                if (res.status>= 200 && res.status<400>){
+                if (res.status>= 200 && res.status<400){
                     setLoading(false);
                     return res.json()
                 }else(res.status)
