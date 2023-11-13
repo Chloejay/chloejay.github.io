@@ -19,7 +19,7 @@ Generic business logic, in the report page, UI component `Search/Select` will be
 
 
 #### Backend API call 
-```Python 
+```python
 from rest_framework import generics 
 from django.http import JsonResponse
 
