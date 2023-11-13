@@ -101,20 +101,18 @@ export function CountryDropDown(){
         <>
         <Typography variant="h6"> 
             <FormControl component="fieldset">
+            <FormLabel component="legend"> Search: </FormLabel>
                 <RadioGroup
                 row 
                 >
-                    <FormControlLabel value={searchBy}>
-                    control={Radio checked={true}}/>
-                    label={searchBy}}
-
-                    </FormControlLabel>
-
+                    <FormControlLabel 
+                    value={searchBy}
+                    control={<Radio checked={true} />}
+                    label={searchBy}} />
                 </RadioGroup>
             </FormControl>
         </Typography>
        
-
         <Select 
         styles={{...}} {/* skip...*/}
         options={ctryList}
