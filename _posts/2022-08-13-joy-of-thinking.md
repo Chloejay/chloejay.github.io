@@ -48,6 +48,6 @@ async def func(text):
     await asyncio.sleep(1) #waiting for some operation; 
 
 asyncio.run(main(), debug= True)
+# how to think code in the low level? I don't know and I have no idea how the things works. and I'm so afraid, but I should have trust for myself.
 ```
 </div>
-# how to think code in the low level? I don't know and I have no idea how the things works. and I'm so afraid, but I should have trust for myself.
