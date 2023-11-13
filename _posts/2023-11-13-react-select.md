@@ -4,13 +4,14 @@ title:  "Reactjs component - multi select"
 date:   2023-11-13 18:40:00 +0800
 categories: reactjs
 tags: reactjs
-image: joy_moment.jpg
+image: joy_life.jpg
 applause: true
 short_description: writing, reactjs
 --- 
 
 
 <div markdown="1" id="text">
+
 Reactjs is truly FP style, to adjust the new business logic I have to redesign the codebase, which made it more module and new changes is to place the logic in the components level. During the weekend, I wanted to implement <b>TF-IDF algorithm</b> in the search component, which backend I will use `Haystack` library, while to achieve the same result I can implement this logic via `react-select` library. 
 <br/>
 To achieve I will still use the `DRF` to build the communication bridge between the client and server. Still I will illustrate with the high level code without details, abstractly. 
