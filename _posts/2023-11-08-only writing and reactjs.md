@@ -18,7 +18,7 @@ First two questions why use reactjs not `jinja templating` that offers by Django
 
 Have used Reactjs in 2016 to try build the portfolio, but it ended nowhere, just a website. After 5 more years in Python, which is more OOP, I feel lucky to have the chance(time) to practice Reactjs in my current work. 
 
-For the setup, I use Webpack and Babel to bundle Reactjs JXS files. React is component based design, which is quite intutive and reusable component is more FP style. I recently used often is `useState` and `useContext`, which required the components designing in the first place, aka. <b>abstract components</b>. 
+For the setup, I use Webpack and Babel to bundle Reactjs JXS files. React is component based design, which is quite intutive and reusable component is more FP style. I recently used often is `useState` and `useContext` React hooks, which required the components designing in the first place, aka. <b>abstract components</b>. 
 
 For web application I'm building is for the risk management, which has functionalities that allow use to create customized report structures contains main components: Scenario, Questions, Templates, Search Bar (API based), Report. 
 
@@ -90,11 +90,7 @@ function ReportComponentWrapper(){
     ...
     return null;
 }
-
-
 ```
-
-
 <hr>
 
 #### Thoughts
