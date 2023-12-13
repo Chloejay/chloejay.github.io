@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Journey"
-date:   2023-12-13 13:00:00 +0800
+date:   2023-12-13 8:00:00 +0800
 categories: life, poem
 tags: poem
 image: mary_oliver.jpg
@@ -11,7 +11,6 @@ short_description: writing
 
 
 <div markdown="1" id="text">
-
 I looked at the windows side of Kaffee shop when waiting for my food, the meoment I feel the world is so amazing and beautiful. 
 That moment I'm so grateful to tell myself I'm glad where I have travelled. I can call it a journey I have to travel. It was a journey, indeed. When I come back home, I read the poem `The Journey` wrote by <i><b>Mary Oliver</b></i>. I have been the fan of her for some time, but until today when I read her poem, I never feel so much connected. I know poem is always connected to the soul, which is a gift for the human spiritual world. But today I deeply feel poem is the way of living, the live we for words. 
 
