@@ -4,7 +4,7 @@ title:  "The Journey"
 date:   2023-12-13 13:00:00 +0800
 categories: life, poem
 tags: poem
-image: joy_life.jpg
+image: mary_oliver.jpg
 applause: true
 short_description: writing
 --- 
