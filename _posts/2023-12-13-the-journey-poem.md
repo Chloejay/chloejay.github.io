@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Journey"
-date:   2023-12-13 13:00:00 +0800
+date:   2023-12-13 8:00:00 +0800
 categories: life, poem
 tags: poem
 image: mary_oliver.jpg
