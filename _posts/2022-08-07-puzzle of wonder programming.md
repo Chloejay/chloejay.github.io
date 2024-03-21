@@ -10,11 +10,8 @@ short_description:
 
 <div markdown="1" id="text">
 <h6>The thoughts from advanced python course</h6>
-This weekend I has this thoughts and state is calm after a long week learning. I deeply feel that life itself is a puzzle or an algorithm with fixed parameters or adjustable parameters, or its just a self generated code. 
-I feel is a puzzle, that's why we have physics to be formed to discover the life/universe, what is life, why life existed? if having parallel universes? what is space and time?
-But by far life doesn't have answers, so for few legitimate rules, ultimately we don't need rules, which is a shit of cages. It pushes us away from the truth and generates the side effect. 
-
-I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. 
+This weekend I has this thoughts and state is calm after a long week learning. I deeply feel that life itself is a puzzle or an algorithm with fixed parameters or adjustable parameters, or its just a self generated code. I feel is a puzzle, that's why we have physics to be formed to discover the life/universe, what is life, why life existed? if having parallel universes? what is space and time?
+But by far life doesn't have answers, so for few legitimate rules, ultimately we don't need rules, which is a shit of cages. It pushes us away from the truth and generates the side effect. I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. 
 
 Taking the course also put me into a safe and comfortable space to learn in a certain time. So below are the 5 thoughts I have when I flash back and reflect the on-hold past events. 
 <hr>
