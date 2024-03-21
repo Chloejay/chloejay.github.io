@@ -9,9 +9,7 @@ short_description:
 --- 
 
 <div markdown="1" id="text">
-Back to 2022 August, I have attended one extensive training from Python expert David Beazley, I didn't really pick up and review what I have learnt. Now sitting in the quiet coffee shop in Helsinki, I restructure this article.
-
-This was I wrote previously, <i>I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. </i> I still keep the wonder of this matter.
+Back to 2022 August, I have attended one extensive training from Python expert David Beazley, I didn't really pick up and review what I have learnt. Now sitting in the quiet coffee shop in Helsinki, I restructure this article. This was I wrote previously, <i>I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. </i> I still keep the wonder of this matter.
 
 
 -  Abstraction, this is the fundamental of the programming to practice you to think abstractly.
