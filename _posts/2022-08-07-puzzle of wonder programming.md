@@ -3,7 +3,7 @@ layout: post
 title:  "The thoughts after programming course - Part 1"
 date:   2022-08-07 23:00 +0800
 categories: programming
-image: programming_is_a_puzzle.jpeg
+image: advanced_py.png
 applause: true
 short_description: 
 --- 
