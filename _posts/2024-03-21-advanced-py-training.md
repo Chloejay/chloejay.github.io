@@ -3,13 +3,13 @@ layout: post
 title:  "Recap for advanced Python training from David Beazley"
 date:   2024-03-21 14:00 +0100
 categories: programming
-image: advanced_py.png
+image: advance_py.png
 applause: true
 short_description: 
 --- 
 
 <div markdown="1" id="text">
-Back to 2022 August, I have attended one extensive training from Python expert David Beazley, I didn't really pick up and review what I have learnt, since I have other things to handle for my personal life. Now sitting in the quiet coffee shop in Helsinki, I restructure this article for myself as a note.
+Back to 2022 August, I have attended one extensive training from Python expert David Beazley, I didn't really pick up and review what I have learnt. Now sitting in the quiet coffee shop in Helsinki, I restructure this article.
 
 This was I wrote previously, <i>I like words in a depth, which builds with curiosity, so I like use words when understanding the universe, for its the language with the creator. Maybe this is also the reason why I like programming, for it keeps me wonders the beauty of the maths, philosophy and logics. </i> I still keep the wonder of this matter.
 
