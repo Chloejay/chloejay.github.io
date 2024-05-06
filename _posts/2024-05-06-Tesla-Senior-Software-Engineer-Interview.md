@@ -11,7 +11,7 @@ short_description: writing
 
 
 <div markdown="1" id="text">
-It's been two more month journey for my current interview with Tesla Berlin, for senior software engineer role. I received the initial interview call from this end of February, and conducted interviews with HR, HM for different rounds till this April 20th. Each round takes 2 more weeks and each round I need to sign a new NDA with different HR interview coordinators. The interview was cancelled just before the last technical interview I will conduct with another HM, as this interview was confirmed one week ago. I have daily practice DSA, but it made sense from the email I received from HR that the current hiring is freeze, due to Tesla layoff situation.
+It's been two more month journey for my current interview with Tesla Berlin, for senior software engineer role. I received the initial interview call from this end of February, and conducted interviews with HR, HM for different rounds till this April 20th. Each round takes 2 more weeks and each round I need to sign a new NDA with different HR interview coordinators. The interview was cancelled just before the last technical interview I will conduct with another HM, as this interview was confirmed one week ago. I have daily practiced DSA, but it made sense from the email I received from HR that the current hiring is freeze, due to Tesla layoff situation.
 
 However, to move on and continue my dream chasing in Berlin, I will come to the round two of job search. It is a nervous, but an exciting journey for sure, for when I have the courage to put myself in a new space, what I got is full freedom to chase what my heart tells me, what my unsettlement guides me and what a new beautiful story is in front of me. For I officially start learn Deutsch from language school now.
 
@@ -114,7 +114,7 @@ class URLShortener:
 
 Besides, for the random character, can we use the hashlib or will be this method we choose will cause the collision?
 
-```python
+```Python
 import hashlib 
 hash_object= hashlib.sha256(long_url.encode())
 random_char= hash_object.hexdigest()[:5]
