@@ -15,7 +15,7 @@ It's been two more month journey for my current interview with Tesla Berlin, for
 
 However, to move on and continue my dream chasing in Berlin, I will come to the round two of job search. It is a nervous, but an exciting journey for sure, for when I have the courage to put myself in a new space, what I got is full freedom to chase what my heart tells me, what my unsettlement guides me and what a new beautiful story is in front of me. For I officially start learn Deutsch from language school now.
 
-So its time to backpack the previous round, now I wrap up what I learnt from previous interview with Tesla, for its an learning space there.
+So its time to backpack the previous round, now I wrap up what I learnt from previous interview with Tesla, for its a learning space there.
 
 Tesla has its own internal database of interview questions, which is share across different countries. For the question I have been tested is an RESTful API design. For the NDA I have signed, the question I illustrate is not exactingly same as interview one, below is my answer and thinking process.
 
