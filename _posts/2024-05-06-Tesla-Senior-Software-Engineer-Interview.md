@@ -15,9 +15,9 @@ It's been two more month journey for my current interview with Tesla Berlin, for
 
 However, to move on and continue my dream chasing in Berlin, I will come to the round two of job search. It is a nervous, but an exciting journey for sure, for when I have the courage to put myself in a new space, what I got is full freedom to chase what my heart tells me, what my unsettlement guides me and what a new beautiful story is in front of me. For I officially start learn Deutsch from language school now.
 
-So its time to backpack the previous round, now I wrap up what I learnt from previous interview with Tesla, for its a learning space there.
+<b>So its time to backpack the previous round, now I wrap up what I learnt from previous interview with Tesla, for its a learning space there.</b>
 
-Tesla has its own internal database of interview questions, which is share across different countries. For the question I have been tested is an RESTful API design. For the NDA I have signed, the question I illustrate is not exactingly same as interview one, below is my answer and thinking process.
+Tesla has its own internal database of interview questions, which shares across different countries. For the question I have been tested is an RESTful API design. For the NDA I have signed, the question I illustrate is not exactingly same as interview one, below is my answer and thinking process.
 
 Question: how to design a shortened URL using FastAPI and Python?
 
@@ -28,7 +28,7 @@ POST / {"long_url":"https:example/long-url-path"}
 Response:
 {"short_url": "https://example/abcdef"}
 
-# then once user GET, aka type the shorten URL in browser, it will redirect to the long-url
+# then once user GET, aka type the shorten URL in browser, it will redirect to long-url
 Request: 
 GET /abcdef 
 Response:
@@ -37,7 +37,7 @@ Redirect to https:example/long-url-path
 
 To design this feature, clearly understand the functional requirements and divide into two steps,
 1. Scenario one: When user has a long URL, have to create a short URL;
-2. Scenario two: When user given a short URL, have to redirect to the original long URL.
+2. Scenario two: When user is given a short URL, have to redirect to the original long URL.
 
 To design this HTTP call in a service layer which use FastAPI, below are few questions need to ask myself before design:
 1. How many shorten size is allowed, what is data type? string or alphanumeric?
