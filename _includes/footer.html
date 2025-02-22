@@ -1,37 +1,39 @@
 <footer class="site-footer">
+
   <div class="wrapper">
     <div class="social-media">
-    {% if site.github_username %}
-    <span>
-      {% include icon-github.html username=site.github_username %}
-    </span>
-    {% endif %}
+      {% if site.github_username %}
+        <span>
+          {% include icon-github.html username=site.github_username %}
+        </span>
+      {% endif %}
 
-    {% if site.twitter_username %}
-    <span>
-      {% include icon-twitter.html username=site.twitter_username %}
-    </span>
-    {% endif %}
+      {% if site.twitter_username %}
+        <span>
+          {% include icon-twitter.html username=site.twitter_username %}
+        </span>
+      {% endif %}
 
-    {% if site.medium_username %}
-    <span>
-      {% include icon-medium.html username=site.medium_username %}
-    </span>
-    {% endif %}
-  </div>
+      {% if site.medium_username %}
+        <span>
+          {% include icon-medium.html username=site.medium_username %}
+        </span>
+      {% endif %}
+    </div>
 
+    <div>
+      {% if site.description %}
+      <span>
+        {{site.description}}<sup>&trade;</sup>
+      </span>
+      {% endif %} 
+    </div>
   <div>
-    {% if site.description %}
-    <span>
-      {{site.description}}<sup>&trade;</sup>
-    </span>
-    {% endif %} 
-  </div>
-  <div>
-    <span>© 2023 {{ site.author }} powered by <a href="https://jekyllrb.com">Jekyll</a>,
+    <span>© 2025 {{ site.author }} powered by <a href="https://jekyllrb.com">Jekyll</a>,
       <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, 
       <a href="https://git-scm.com/">Git</a>, 
       use <a href="https://github.com/jekyll/minima">Minima theme</a>
     </span>
   </div>
+  
 </footer> 

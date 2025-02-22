@@ -342,8 +342,17 @@ border: 1px solid $brand-color;
   font-size: 0.815rem;
 }
 
+#loc{
+  color:$dynamic-color;
+  line-height:0.75rem;
+  box-sizing: border-box;
+  margin-left: 18px;
+  margin-right: 10px;
+  font-size: 0.815rem;
+}
+
 #closing{
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   margin-block-start: 0.1em;
   margin-block-end: 0.12em;
   margin-inline-start: 0.1em;
