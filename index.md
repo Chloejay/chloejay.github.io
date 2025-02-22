@@ -12,7 +12,7 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
   <div class="bg">
    <img src="/assets/chloe_profile.jpeg" alt="{{ site.author }} profile pic" class="profile-pic" />
    <h2 id="name">Chloe Ji</h2>
-   <div id="adj_">self-taught Software Engineer</div>
+   <div id="adj_">a passionate, curious Software Engineer</div>
    <p id="self_intro">I strive to write clean, functional code.
    Code in <span id="lang">Python (mostly), Golang, Scala, Javascript</span>,
    contributing to open source projects.
@@ -22,7 +22,7 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
    <a class="intro_a" href="https://www.lewagon.com/blog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> 
    and biking.
    
-   <span id="closing">I keep creating environment for curiosity and updating my skills with new engineering tech stack.</span>
+   <span id="closing"> As a self-taught, I keep updated myself with new tech stack.</span>
    </p>
   </div>
 

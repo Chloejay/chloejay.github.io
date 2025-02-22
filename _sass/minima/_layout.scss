@@ -138,6 +138,7 @@
     }
   }
 }
+
 #name {
   font-family: $hero-font-family;
   color: #0d2439;
@@ -195,9 +196,9 @@
 }
 
 .project_li:hover .projectImage{
-opacity: 0.1;
-box-shadow: inset;
-border: 1px solid $brand-color;
+  opacity: 0.1;
+  box-shadow: inset;
+  border: 1px solid $brand-color;
 }
 
 .hover-content{
@@ -709,8 +710,6 @@ a .intro_a{
       margin: 5rem 0 0 45%;
     }
 
-    
-
       .count-container {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.68rem;
@@ -731,37 +730,13 @@ a .intro_a{
   padding: 0;
 }
 
-// span.info{
-  // color:#fafafa; 
-  // font-size: 18px; 
-  // border: 2px solid $grey-color-light;
-  // border-radius: inherit;
-  // padding: 0.1em;
-  // background-color: $grey-color-dark;
-  // &:hover{
-    // color:#ff6f5e;
-    // background-color: #fafafa;
-    // border: none;
-  // }
-// }
-
-// span.firstletter{
-  // color:#e83e8c;
-  // float: left;
-  // font-family: Bitter;
-  // font-size: 40px;
-  // line-height: 32px;
-  // padding-top: 2px;
-  // padding-right: 2px;
-  // padding-left: 2px;
-// }
-
 table{
   border-collapse: collapse;
   border-spacing: 0.1em;
   border:1px solid #9896f1;
   font-size: 18px;
 }
+
 
 th{
   border:1px solid #9896f1;
@@ -770,4 +745,3 @@ th{
 td{
   border:1px solid #9896f1;
 }
-
