@@ -19,7 +19,7 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
    I
    <a class="intro_a" href="https://github.com/Chloejay/anti-tldr">read</a>,
    <a class="intro_a" href="https://chloejay.github.io/blog/">write</a>, 
-   <a class="intro_a" href="https://www.lewagon.com/bålog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> 
+   <a class="intro_a" href="https://www.lewagon.com/blog/shanghai-data-science-teaching-crew?from=timeline&isappinstalled=0">teach</a> 
    and biking.
    
    <span id="closing"> As a self-taught, I keep updated myself with new tech stack.</span>
@@ -27,7 +27,7 @@ description: "I'm a self-taught programmer and lifelong learner. I like writing 
   </div>
 
  </div>
-‚
+
   <hr>
 
   <div id="project_section">
