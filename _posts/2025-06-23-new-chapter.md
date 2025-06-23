@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "New city"
-date:   2025-06-23 21:00:00 +0100
+date:   2025-06-23 20:00:00 +0100
 categories: personal
 tags: life
-image: plants.png
+image: path.jpg
 applause: true
 short_description: life
 --- 
