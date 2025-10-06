@@ -106,10 +106,30 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.intro-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-content {
+  flex: 1;
+}
+
 .intro-text {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 0.9rem;
+  color: #2c363c;
   line-height: 1.7;
+  margin: 0;
 }
 
 .posts-section {
@@ -434,6 +454,18 @@ a:hover {
     padding: 1.5rem 1rem;
   }
   
+  .intro-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .profile-image {
+    width: 64px;
+    height: 64px;
+  }
+  
   .post-item {
     flex-direction: column;
     gap: 0.3rem;
@@ -560,6 +592,10 @@ a:hover {
   }
   
   p {
+    color: #b4bdc3;
+  }
+  
+  .intro-text {
     color: #b4bdc3;
   }
   

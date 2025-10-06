@@ -3,9 +3,14 @@ layout: default
 ---
 
 <div class="home-intro">
-  {% if page.description %}
-  <p class="intro-text">{{ page.description }}</p>
-  {% endif %}
+  <div class="intro-profile">
+    <img src="/assets/chloe_profile.jpeg" alt="{{ site.author }}" class="profile-image">
+    <div class="intro-content">
+      {% if page.description %}
+      <p class="intro-text">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
 </div>
 
 <section class="posts-section">
