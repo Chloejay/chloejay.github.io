@@ -1,0 +1,587 @@
+/* Modern CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 400;
+  color: #2c363c;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container & Layout */
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.9rem; }
+h6 { font-size: 0.85rem; }
+
+p {
+  margin-bottom: 1.5rem;
+  color: #2c363c;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:hover {
+  color: #666;
+}
+
+/* Site Header */
+.site-header {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-title {
+  margin-bottom: 0.5rem;
+}
+
+.site-title a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: #000;
+}
+
+.site-title a:hover {
+  color: #666;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+}
+
+/* Home Page Styles */
+.home-intro {
+  margin-bottom: 3rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.posts-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.8rem;
+  gap: 1rem;
+}
+
+.post-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #666;
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+
+.post-title {
+  text-decoration: none;
+  color: #000;
+  flex: 1;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+  color: #666;
+}
+
+/* Post Styles */
+.post {
+  margin-bottom: 3rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #666;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content h1:first-child,
+.post-content h2:first-child,
+.post-content h3:first-child {
+  margin-top: 0;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid #e5e5e5;
+  color: #666;
+  font-style: italic;
+}
+
+/* Code blocks - wickstrom.tech style */
+.post-content pre {
+  background: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.post-content code {
+  font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.8rem;
+  background: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-weight: normal;
+}
+
+.post-content pre code {
+  background: inherit;
+  padding: 0;
+}
+
+/* Syntax highlighting - enhanced for multiple languages */
+.highlight {
+  background: inherit;
+  margin: 1.5rem 0;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+/* Keywords (def, class, if, for, etc.) */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx {
+  color: #556570;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs {
+  color: #999;
+  font-style: italic;
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+  color: inherit;
+}
+
+/* Functions and methods */
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .ni,
+.highlight .nl,
+.highlight .nn,
+.highlight .no,
+.highlight .nt,
+.highlight .nv,
+.highlight .nx {
+  color: inherit;
+}
+
+/* Operators */
+.highlight .o,
+.highlight .ow {
+  color: inherit;
+}
+
+/* Punctuation */
+.highlight .p {
+  color: inherit;
+}
+
+/* Variables */
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: inherit;
+}
+
+/* Error highlighting */
+.highlight .err {
+  color: inherit;
+  background: inherit;
+}
+
+.post-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  background: #f0f0f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: #666;
+}
+
+/* Post Navigation */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+  gap: 1rem;
+}
+
+.nav-previous,
+.nav-next {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.nav-previous:hover,
+.nav-next:hover {
+  color: #1a1a1a;
+}
+
+.nav-next {
+  text-align: right;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-nav a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #999;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Page Styles */
+.page-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-content {
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .post-item {
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .post-date {
+    min-width: auto;
+    font-size: 0.8rem;
+  }
+  
+  .post-navigation {
+    flex-direction: column;
+  }
+  
+  .nav-next {
+    text-align: left;
+  }
+  
+  .footer-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #b4bdc3;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  .site-title a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .site-title a:hover {
+    color: #ccc;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  a:visited {
+    color: #ccc;
+  }
+  
+  a:hover {
+    color: #ccc;
+  }
+  
+  .post-title {
+    color: #fff;
+  }
+  
+  .site-header,
+  .post-header,
+  .post-footer,
+  .post-navigation,
+  .site-footer,
+  .page-header {
+    border-color: #333;
+  }
+  
+  .post-content pre {
+    background: inherit;
+    border: none;
+    color: #b4bdc3;
+  }
+  
+  .post-content code {
+    background: inherit;
+  }
+  
+  /* Dark mode syntax highlighting */
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt {
+    font-weight: 700;
+    color: inherit;
+  }
+  
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx {
+    color: #868c91;
+  }
+  
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm,
+  .highlight .cs {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .post-content blockquote {
+    border-color: #333;
+    color: #999;
+  }
+  
+  .tag {
+    background: #333;
+    color: #ccc;
+  }
+  
+  p {
+    color: #b4bdc3;
+  }
+  
+  .copyright {
+    color: #666;
+  }
+}
+
+/* Print styles */
+@media print {
+  .site-footer,
+  .post-navigation {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}

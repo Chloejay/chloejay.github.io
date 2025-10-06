@@ -1,20 +1,54 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  
+  <!-- Modern CSS Reset & Custom Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  <!-- Preload fonts for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  {% if jekyll.environment == 'production' %}
+  <!-- Add analytics or other production scripts here -->
+  {% endif %}
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
+      {% if site.tagline %}
+      <p class="site-tagline">{{ site.tagline }}</p>
+      {% endif %}
+    </header>
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="content">
+      {{ content }}
     </main>
 
-    {% include footer.html %}
-
-  </body>
-
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog' | relative_url }}">Posts</a>
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+        {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
+        {% endif %}
+      </nav>
+      <p class="copyright">© 2025 powered by Jekyll, Markdown, Git, custom minimalist theme. ❤️</p>
+    </footer>
+  </div>
+</body>
 </html>

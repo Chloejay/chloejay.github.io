@@ -1,94 +1,45 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+---
+layout: default
+---
 
-  {% include head.html %}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d %b %Y" }}
+      </time>
+      {% if page.author %}
+      <span class="post-author">by {{ page.author }}</span>
+      {% endif %}
+    </div>
+  </header>
 
-  <body>
+  <div class="post-content">
+    {{ content }}
+  </div>
 
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-        <div class="wrapper">
-          <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-            <p class="post-meta">
-              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished{% unless page.last_modified %} dateModified{% endunless %}" content="{{ page.date }}">
-                {{ page.date | date: date_format }}
-              </time>
-              {% if page.last_modified %}
-              - <span class="modified">Last updated on </span>
-              <time datetime="{{ page.last_modified | date_to_xmlschema }}" itemprop="dateModified" content="{{ page.last_modified }}">
-                {{ page.last_modified | date: date_format }}
-              </time>
-              {% endif %}
-              <span style="display: none" itemprop="author publisher" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author }}</span></span>
-          </header>
-        </div>
-
-        <div class="post-image">
-          <img itemprop="image" src="{{ site.url }}/assets/{{ page.image }}" />
-          <div class="caption">{{ page.caption }}</div>
-        </div>
-
-        <div class="wrapper article">
-          <div class="post-content" itemprop="articleBody">
-            {{ content }}
-          </div>
-        </div>
-
-        {% if site.disqus.shortname %}
-          {% include disqus_comments.html %}
-        {% endif %}
-      </article>
-
-    </main>
-
-    <script type="text/javascript">
-      var anchorForId = function (id) {
-        var anchor = document.createElement("a");
-        anchor.className = "header-link";
-        anchor.href      = "#" + id;
-        return anchor;
-      };
-
-      var linkifyAnchors = function (level, containingElement) {
-        var headers = containingElement.getElementsByTagName("h" + level);
-        for (var h = 0; h < headers.length; h++) {
-          var header = headers[h];
-
-          if (typeof header.id !== "undefined" && header.id !== "") {
-            var newWrapper = anchorForId(header.id);
-            header.parentNode.replaceChild(newWrapper, header);
-            newWrapper.appendChild(header);
-          }
-        }
-      };
-
-      document.onreadystatechange = function () {
-        if (this.readyState === "complete") {
-          var contentBlock = document.getElementsByClassName("post-content")[0];
-          if (!contentBlock) {
-            return;
-          }
-          for (var level = 1; level <= 6; level++) {
-            linkifyAnchors(level, contentBlock);
-          }
-        }
-      };
-    </script>
-  {% if page.applause %}
-    <script src="/assets/applause-button.js"></script>
+  {% if page.tags.size > 0 %}
+  <footer class="post-footer">
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </footer>
   {% endif %}
+</article>
 
-    {% include footer.html %}
-
-  </body>
-
-</html>
+<nav class="post-navigation">
+  {% if page.previous.url %}
+  <a href="{{ page.previous.url | relative_url }}" class="nav-previous">
+    ← {{ page.previous.title }}
+  </a>
+  {% endif %}
+  
+  {% if page.next.url %}
+  <a href="{{ page.next.url | relative_url }}" class="nav-next">
+    {{ page.next.title }} →
+  </a>
+  {% endif %}
+</nav>

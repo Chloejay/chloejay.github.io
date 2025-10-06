@@ -28,9 +28,15 @@ github_username:  chloejay
 medium_username: chloeji
 linkedin_username: chloeji91
 
+# Custom theme settings
+author: "Chloe Ji"
+tagline: "Software Engineer & Lifelong Learner"
+
+
 # Build settings
-theme: minima
-# theme: minimal-mistakes-jekyll
+# Custom minimalist theme
+theme: null
+remote_theme: null
 
 plugins:
   - jekyll-feed
@@ -49,6 +55,7 @@ kramdown:
 highlighter: rouge
 minima:
   date_format: "%-d %b %Y"
+  skin: auto
 
 exclude:
   - Gemfile
@@ -63,6 +70,7 @@ defaults:
       path: "404.html"
     values:
       sitemap: false
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -5,3 +5,24 @@
 @import 
 "minima";
 // "dev/minimal-mistakes/skins/sunrise";
+
+/* Default Light Mode */
+body {
+    background-color: #ffffff;
+    color: #222222;
+  }
+  
+//   /* Dark Mode */
+//   @media (prefers-color-scheme: dark) {
+//     body {
+//       background-color: #121212;
+//       color: #ffffff;
+//     }
+    
+//     a {
+//       color: #bb86fc;
+//     }
+    
+//     /* Customize Navbar, Buttons, and More */
+//   }
+  

@@ -106,7 +106,7 @@ export function CountryDropDown(){
                     <FormControlLabel 
                     value={searchBy}
                     control={<Radio checked={true} />}
-                    label={searchBy}} />
+                    label={searchBy} />
                 </RadioGroup>
             </FormControl>
         </Typography>

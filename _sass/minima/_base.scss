@@ -48,7 +48,7 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-  max-width: 100%;
+  max-width: 80%;
   vertical-align: middle;
 }
 
@@ -116,7 +116,7 @@ blockquote {
   border-left: 4px solid $grey-color-light;
   padding: 0.5em 1em;
   @include relative-font-size(1.125);
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
 
   > :last-child {

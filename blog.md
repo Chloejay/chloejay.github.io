@@ -1,9 +1,6 @@
 ---
 layout: home
-title: Words
-short_description: "talk about code and learning journey" 
-permalink: /blog/ 
-nav: True 
-entries_layout: grid
+title: Posts
+permalink: /blog/
+description: "Thoughts on software engineering, functional programming, and life lessons learned through code."
 ---
-
