@@ -107,22 +107,22 @@ a:hover {
 }
 
 .intro-profile {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
 .profile-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
   object-fit: cover;
-  flex-shrink: 0;
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
 }
 
 .intro-content {
-  flex: 1;
+  overflow: hidden;
 }
 
 .intro-text {
@@ -454,16 +454,16 @@ a:hover {
     padding: 1.5rem 1rem;
   }
   
-  .intro-profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+  .profile-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 56px;
+    height: 56px;
   }
   
-  .profile-image {
-    width: 64px;
-    height: 64px;
+  .intro-content {
+    text-align: center;
   }
   
   .post-item {
