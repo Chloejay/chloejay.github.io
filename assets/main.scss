@@ -2,27 +2,512 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 
-"minima";
-// "dev/minimal-mistakes/skins/sunrise";
+@import "minima";
 
-/* Default Light Mode */
-body {
-    background-color: #ffffff;
-    color: #222222;
+/* Dark theme (default) */
+:root, [data-theme="dark"] {
+  --color-bg: #1a1a2e;
+  --color-text: #e8e8e8;
+  --color-text-muted: #a0a0a0;
+  --color-link: #7eb8ff;
+  --color-link-hover: #5a9fd4;
+  --color-link-visited: #c9a0dc;
+  --color-border: #444;
+  --color-purple-light: #2d2640;
+  --color-purple-hover: #3d3355;
+  --color-code-bg: #161b22;
+  --color-tag-bg: #2d2640;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-text: #222222;
+  --color-text-muted: #666666;
+  --color-link: #0066cc;
+  --color-link-hover: #004499;
+  --color-link-visited: #551a8b;
+  --color-border: #e0e0e0;
+  --color-purple-light: #f5f5f5;
+  --color-purple-hover: #eeeeee;
+  --color-code-bg: #f6f6f6;
+  --color-tag-bg: #f0f0f0;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-text-muted);
+    transition: fill 0.2s;
   }
-  
-//   /* Dark Mode */
-//   @media (prefers-color-scheme: dark) {
-//     body {
-//       background-color: #121212;
-//       color: #ffffff;
-//     }
-    
-//     a {
-//       color: #bb86fc;
-//     }
-    
-//     /* Customize Navbar, Buttons, and More */
-//   }
-  
+
+  &:hover svg {
+    fill: var(--color-link);
+  }
+
+  #icon-light {
+    display: none;
+  }
+}
+
+[data-theme="light"] #theme-toggle {
+  #icon-dark {
+    display: none;
+  }
+  #icon-light {
+    display: block;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
+}
+
+/* Container - 50% for home page */
+.container {
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Clean header styling - dark purple style */
+.site-header {
+  background-color: var(--color-bg);
+  border-top: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 15px 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+
+    a {
+      color: var(--color-text);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-link);
+      }
+    }
+  }
+
+  .site-nav {
+    a {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--color-link);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Content area */
+.content {
+  background-color: var(--color-bg);
+}
+
+/* Hero section */
+.hero {
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 1em;
+
+    strong {
+      color: var(--color-link);
+    }
+
+    a {
+      color: var(--color-link);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  em {
+    color: var(--color-text-muted);
+  }
+}
+
+/* Project cards */
+.hero p strong a {
+  display: inline-block;
+  color: var(--color-link);
+  font-weight: 600;
+}
+
+/* Posts section - style */
+.posts-section {
+  max-width: 100%;
+}
+
+.section-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 1.5em 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.date-header {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 1.5em 0 0.5em 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.post-entry {
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.2em 0;
+  line-height: 1.4;
+
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.entry-excerpt {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: 0.3em;
+}
+
+.entry-tags {
+  font-size: 0.8rem;
+
+  .tag {
+    color: var(--color-link);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Subtle post meta */
+.post-meta {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Article container - wider for post pages */
+.post {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+/* Widen container for post pages */
+body:has(.post) .container {
+  width: 91%;
+  max-width: 1200px;
+}
+
+/* Post page title */
+.post-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+
+  .post-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.3;
+    margin: 0 0 12px 0;
+  }
+
+  .post-meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+
+    time {
+      color: var(--color-text-muted);
+    }
+  }
+}
+
+/* Post content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+
+  h1, h2, h3, h4 {
+    color: var(--color-text);
+    font-weight: 600;
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+  }
+
+  ul, ol {
+    margin-bottom: 1.2em;
+    padding-left: 1.5em;
+
+    li {
+      margin-bottom: 0.4em;
+      line-height: 1.6;
+    }
+  }
+
+  a {
+    color: var(--color-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  strong, b {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+    border-radius: 4px;
+  }
+}
+
+/* Clean code blocks */
+pre, code {
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, monospace;
+  font-size: 0.875rem;
+}
+
+code {
+  background-color: var(--color-code-bg);
+  color: var(--color-text);
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: none;
+}
+
+pre {
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+
+  code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+/* Muted blockquotes */
+blockquote {
+  color: var(--color-text-muted);
+  border-left: 3px solid var(--color-border);
+  background-color: var(--color-purple-light);
+  padding: 12px 20px;
+  margin: 1.5em 0;
+  font-style: italic;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Post footer with tags */
+.post-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    background-color: var(--color-tag-bg);
+    color: var(--color-text);
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Post navigation */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+
+  a {
+    color: var(--color-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .nav-previous {
+    margin-right: auto;
+  }
+
+  .nav-next {
+    margin-left: auto;
+  }
+}
+
+/* Archive years section */
+.archive-years {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 12px 0;
+  }
+
+  .year-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    a {
+      color: var(--color-link);
+      font-size: 0.9rem;
+      padding: 4px 12px;
+      background-color: var(--color-tag-bg);
+      border-radius: 4px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--color-purple-hover);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 20px 0;
+  margin-top: 40px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+
+  .footer-nav {
+    margin-bottom: 10px;
+
+    a {
+      color: var(--color-link);
+      text-decoration: none;
+      margin-right: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .copyright {
+    margin: 0;
+  }
+}

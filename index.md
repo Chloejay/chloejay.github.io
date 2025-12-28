@@ -17,7 +17,3 @@ Built object detection model with TensorFlow, delivered results via image/conten
 Created big data pipeline, set up data warehouse (NoSQL and SQL), designed analytical layer for real-time dashboard using Apache Superset, deployed to AWS EC2 with Nginx.
 
 [More projects →](https://github.com/Chloejay)
-
-## Contact
-
-You can find me on [Twitter](https://twitter.com/{{ site.twitter_username }}), [GitHub](https://github.com/{{ site.github_username }}), [Medium](https://medium.com/@{{ site.medium_username}}) or [send me an email](mailto:{{ site.email }}).

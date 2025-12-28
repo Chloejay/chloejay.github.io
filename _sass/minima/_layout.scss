@@ -3,58 +3,48 @@
  */
 .site-header {
   font-family: $hero-font-family;
-  border-top: 4px solid $brand-color;
-  border-bottom: 1px solid $brand-color;
+  border-top: none;
+  border-bottom: 1px solid #e5e5e5;
   min-height: $spacing-unit * 1.625;
-  color: $background-color-backup;
+  color: $text-color;
   font-size: 0.88rem;
   font-weight: lighter;
   width: 100%;
-  background-color: $brand-color;
+  background-color: #fff;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 
   &,
-  &:visited{
-  color: $note-color;
-  text-decoration: none;
+  &:visited {
+    color: $text-color;
+    text-decoration: none;
   }
 
-&:hover {
-  color:$note-color;
-  text-decoration: underline;
-  text-decoration-style: initial;
-  text-decoration-color: $dynamic-color;
-  letter-spacing: 0.0075em;
-  box-sizing: border-box;
-}
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
 }
 
 .site-title {
   @include relative-font-size(1.65);
-  font-weight: 108;
+  font-weight: 600;
   line-height: $base-line-height * $base-font-size * 1.75;
   margin-bottom: 0;
   float: left;
-  color: $background-color-backup;
-  text-decoration: underline;
-  text-decoration-color: $dynamic-color;
+  color: #333;
+  text-decoration: none;
 
   &,
-  &:visited{
-    color: $note-color;
+  &:visited {
+    color: #333;
     text-decoration: none;
-    text-decoration: underline;
-    text-decoration-color: $dynamic-color;
   }
 
   &:hover {
-    color:$note-color;
+    color: $brand-color;
     text-decoration: none;
-    text-decoration-style: initial;
-    letter-spacing: 0.0075em;
-    box-sizing: inherit;
   }
 }
 
@@ -81,9 +71,12 @@
   }
 
   a {
-    text-decoration: initial;
-    text-decoration: underline;
-    text-decoration-color: $dynamic-color;
+    text-decoration: none;
+    color: $brand-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   @include media-query($on-palm) {
@@ -381,32 +374,30 @@ a .intro_a{
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $brand-color;
-  background-color: $brand-color;
+  border-top: 1px solid #e5e5e5;
+  background-color: #fff;
   padding: $spacing-unit 0;
-  color:$background-color-backup;
+  color: #666;
   width: 100%;
-  // color: $grey-color;
   @include relative-font-size(0.7);
 
   @include media-query($on-palm) {
     @include relative-font-size(0.6);
   }
-  
-  a {
-  color: $grey-color-dark;
-  text-decoration: none; 
-  // text-decoration-color: $dynamic-color;
-  
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 
-  &:hover {
-    color:$background-color-backup;
+  a {
+    color: $brand-color;
     text-decoration: none;
+
+    &:visited {
+      color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+      color: darken($brand-color, 15%);
+      text-decoration: underline;
+    }
   }
-}
 }
 
 .footer-heading {

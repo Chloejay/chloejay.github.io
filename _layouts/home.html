@@ -2,35 +2,36 @@
 layout: default
 ---
 
-<div class="home-intro">
-  <div class="intro-profile">
-    <img src="/assets/chloe_profile.jpeg" alt="{{ site.author }}" class="profile-image">
-    <div class="intro-content">
-      {% if page.description %}
-      <p class="intro-text">{{ page.description }}</p>
-      {% endif %}
-    </div>
-  </div>
-</div>
+{{ content }}
 
 <section class="posts-section">
-  <h2 class="section-title">Posts</h2>
-  
   {% assign posts = site.posts %}
-  {% if posts.size > 0 %}
-  <ul class="post-list">
-    {% for post in posts %}
-    <li class="post-item">
-      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date: "%d %b %Y" }}
-      </time>
-      <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p class="no-posts">No posts yet.</p>
-  {% endif %}
-</section>
+  {% assign current_date = "" %}
 
-{{ content }}
+  {% for post in posts %}
+    {% assign post_date = post.date | date: "%b. %-d, %Y" %}
+
+    {% if post_date != current_date %}
+      {% assign current_date = post_date %}
+      <h2 class="date-header">{{ post.date | date: "%b. %-d, %Y" }}</h2>
+    {% endif %}
+
+    <article class="post-entry">
+      <h3 class="entry-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}
+      <div class="entry-excerpt">
+        {{ post.excerpt | strip_html | truncate: 200 }}
+      </div>
+      {% endif %}
+      {% if post.categories.size > 0 %}
+      <div class="entry-tags">
+        {% for cat in post.categories %}
+        <a href="#" class="tag">/{{ cat }}/</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
